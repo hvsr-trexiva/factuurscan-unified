@@ -1,0 +1,4 @@
+import {voiceConfigured} from "@/lib/voice-provider";
+import {chatConfigured} from "@/lib/chat-provider";
+import {runtime,json} from "@/lib/server";
+export async function GET(){const e=runtime();const booking=e.BOOKING_URL&&/^https:\/\/(calendly\.com|calendar\.app\.google|calendar\.google\.com)\//.test(e.BOOKING_URL)?e.BOOKING_URL:null;return json({booking,chatReady:chatConfigured(e),voiceReady:voiceConfigured(e),whatsapp:/^[1-9]\d{7,14}$/.test(e.WHATSAPP_NUMBER||"")?e.WHATSAPP_NUMBER:null,email:e.CONTACT_EMAIL||"admin@factuurscan.be",phone:e.CONTACT_PHONE||null,company:e.COMPANY_NAME||null,companyNumber:e.COMPANY_NUMBER||null,address:e.COMPANY_ADDRESS||null,aiReady:e.AI_READY==="true",pixel:/^\d+$/.test(e.META_PIXEL_ID||"")?e.META_PIXEL_ID:null});}

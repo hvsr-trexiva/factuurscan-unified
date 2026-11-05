@@ -1,0 +1,1129 @@
+{
+  "month": "2026-10",
+  "sourceUrl": "https://assets.vlaamsenutsregulator.be/2026-10/202610-v-test-data-exclbtw%20v2_0.xlsx?VersionId=ufWqr3DPEaKhTD0JCL1DMWDmRaM7q1PZ",
+  "sourceSha256": "19b144ba854da3eda6bc9375dbc0a8b8f269defda1bf9dc526edb6356c5bddeb",
+  "maxima": [
+    {
+      "supplier": "Ecofix Gas & Power",
+      "product": "Flexy Pro",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 16.5967929,
+      "sourceSheet": 3,
+      "sourceRow": 16351
+    },
+    {
+      "supplier": "Ecopower",
+      "product": "Groene Burgerstroom",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 16.0474475,
+      "sourceSheet": 3,
+      "sourceRow": 16366
+    },
+    {
+      "supplier": "Elegant",
+      "product": "ComfortFlex",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 17.511666440000003,
+      "sourceSheet": 3,
+      "sourceRow": 16373
+    },
+    {
+      "supplier": "Eneco",
+      "product": "Eneco Zon & Wind Flex",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 17.905792899999998,
+      "sourceSheet": 3,
+      "sourceRow": 16391
+    },
+    {
+      "supplier": "Energie.be",
+      "product": "Elektriciteit professioneel online",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 16.8905887,
+      "sourceSheet": 3,
+      "sourceRow": 16409
+    },
+    {
+      "supplier": "ENGIE",
+      "product": "Easy pro",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 20.214922973000004,
+      "sourceSheet": 3,
+      "sourceRow": 16457
+    },
+    {
+      "supplier": "Luminus",
+      "product": "ComfyFlex Pro+",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 21.358448431200003,
+      "sourceSheet": 3,
+      "sourceRow": 16545
+    },
+    {
+      "supplier": "Mega",
+      "product": "COSY GREEN FLEX",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 19.550618135,
+      "sourceSheet": 3,
+      "sourceRow": 16566
+    },
+    {
+      "supplier": "OCTA+",
+      "product": "Eco Boost Flex",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 19.285209119999998,
+      "sourceSheet": 3,
+      "sourceRow": 16619
+    },
+    {
+      "supplier": "TotalEnergies",
+      "product": "proComfort Variabel",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 18.688910025,
+      "sourceSheet": 3,
+      "sourceRow": 16711
+    },
+    {
+      "supplier": "Ecofix Gas & Power",
+      "product": "Flexy Pro",
+      "energy": "gas",
+      "type": "variable",
+      "singleCents": 7.497722360000001,
+      "sourceSheet": 3,
+      "sourceRow": 17075
+    },
+    {
+      "supplier": "Elegant",
+      "product": "ComfortFlex",
+      "energy": "gas",
+      "type": "variable",
+      "singleCents": 7.551351899999999,
+      "sourceSheet": 3,
+      "sourceRow": 17077
+    },
+    {
+      "supplier": "Eneco",
+      "product": "Eneco Aardgas Flex",
+      "energy": "gas",
+      "type": "variable",
+      "singleCents": 7.892636,
+      "sourceSheet": 3,
+      "sourceRow": 17081
+    },
+    {
+      "supplier": "Energie.be",
+      "product": "Gas professioneel online",
+      "energy": "gas",
+      "type": "variable",
+      "singleCents": 7.4813519,
+      "sourceSheet": 3,
+      "sourceRow": 17085
+    },
+    {
+      "supplier": "ENGIE",
+      "product": "Easy pro",
+      "energy": "gas",
+      "type": "variable",
+      "singleCents": 8.617902039999999,
+      "sourceSheet": 3,
+      "sourceRow": 17089
+    },
+    {
+      "supplier": "Luminus",
+      "product": "ComfyFlex Pro+",
+      "energy": "gas",
+      "type": "variable",
+      "singleCents": 8.9915540714,
+      "sourceSheet": 3,
+      "sourceRow": 17109
+    },
+    {
+      "supplier": "Mega",
+      "product": "COSY FLEX",
+      "energy": "gas",
+      "type": "variable",
+      "singleCents": 8.719066159999999,
+      "sourceSheet": 3,
+      "sourceRow": 17113
+    },
+    {
+      "supplier": "OCTA+",
+      "product": "Smart Variabel KZ",
+      "energy": "gas",
+      "type": "variable",
+      "singleCents": 8.95520205,
+      "sourceSheet": 3,
+      "sourceRow": 17127
+    },
+    {
+      "supplier": "TotalEnergies",
+      "product": "proEssential Variabel",
+      "energy": "gas",
+      "type": "variable",
+      "singleCents": 7.600813724,
+      "sourceSheet": 3,
+      "sourceRow": 17143
+    },
+    {
+      "supplier": "Elegant",
+      "product": "Zeker & Vast",
+      "energy": "electricity",
+      "type": "fixed",
+      "singleCents": 17.55,
+      "sourceSheet": 5,
+      "sourceRow": 4510
+    },
+    {
+      "supplier": "Eneco",
+      "product": "Eneco Zon & Wind Vast",
+      "energy": "electricity",
+      "type": "fixed",
+      "singleCents": 19.908,
+      "sourceSheet": 5,
+      "sourceRow": 4524
+    },
+    {
+      "supplier": "Energie.be",
+      "product": "Elektriciteit vast professioneel online",
+      "energy": "electricity",
+      "type": "fixed",
+      "singleCents": 20.327,
+      "sourceSheet": 5,
+      "sourceRow": 4531
+    },
+    {
+      "supplier": "ENGIE",
+      "product": "Easy pro",
+      "energy": "electricity",
+      "type": "fixed",
+      "singleCents": 20.975,
+      "sourceSheet": 5,
+      "sourceRow": 4538
+    },
+    {
+      "supplier": "Luminus",
+      "product": "Comfy Pro+",
+      "energy": "electricity",
+      "type": "fixed",
+      "singleCents": 22.79124,
+      "sourceSheet": 5,
+      "sourceRow": 4566
+    },
+    {
+      "supplier": "Mega",
+      "product": "Speciale aanbieding Testaankoop Fixed",
+      "energy": "electricity",
+      "type": "fixed",
+      "singleCents": 21.372,
+      "sourceSheet": 5,
+      "sourceRow": 4615
+    },
+    {
+      "supplier": "TotalEnergies",
+      "product": "proComfort Vast",
+      "energy": "electricity",
+      "type": "fixed",
+      "singleCents": 19.73784,
+      "sourceSheet": 5,
+      "sourceRow": 4629
+    },
+    {
+      "supplier": "Elegant",
+      "product": "Zeker & Vast",
+      "energy": "gas",
+      "type": "fixed",
+      "singleCents": 8.585,
+      "sourceSheet": 5,
+      "sourceRow": 4695
+    },
+    {
+      "supplier": "Eneco",
+      "product": "Eneco Aardgas Vast",
+      "energy": "gas",
+      "type": "fixed",
+      "singleCents": 8.702,
+      "sourceSheet": 5,
+      "sourceRow": 4699
+    },
+    {
+      "supplier": "Energie.be",
+      "product": "Gas vast professioneel online",
+      "energy": "gas",
+      "type": "fixed",
+      "singleCents": 8.14,
+      "sourceSheet": 5,
+      "sourceRow": 4701
+    },
+    {
+      "supplier": "ENGIE",
+      "product": "Easy pro",
+      "energy": "gas",
+      "type": "fixed",
+      "singleCents": 9.797,
+      "sourceSheet": 5,
+      "sourceRow": 4703
+    },
+    {
+      "supplier": "Luminus",
+      "product": "Comfy Pro+",
+      "energy": "gas",
+      "type": "fixed",
+      "singleCents": 9.57571,
+      "sourceSheet": 5,
+      "sourceRow": 4711
+    },
+    {
+      "supplier": "Mega",
+      "product": "ONLINE FIXED",
+      "energy": "gas",
+      "type": "fixed",
+      "singleCents": 8.828,
+      "sourceSheet": 5,
+      "sourceRow": 4719
+    },
+    {
+      "supplier": "TotalEnergies",
+      "product": "proComfort Vast",
+      "energy": "gas",
+      "type": "fixed",
+      "singleCents": 7.49,
+      "sourceSheet": 5,
+      "sourceRow": 4729
+    }
+  ],
+  "reviewedProducts": [
+    {
+      "supplier": "Ecofix Gas & Power",
+      "product": "Flexy Online Pro",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 15.985843950000001,
+      "sourceSheet": 3,
+      "sourceRow": 16344
+    },
+    {
+      "supplier": "Ecofix Gas & Power",
+      "product": "Flexy Pro",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 16.5967929,
+      "sourceSheet": 3,
+      "sourceRow": 16351
+    },
+    {
+      "supplier": "Ecopower",
+      "product": "Groene Burgerstroom",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 16.0474475,
+      "sourceSheet": 3,
+      "sourceRow": 16366
+    },
+    {
+      "supplier": "Elegant",
+      "product": "ComfortFlex",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 17.511666440000003,
+      "sourceSheet": 3,
+      "sourceRow": 16373
+    },
+    {
+      "supplier": "Elegant",
+      "product": "Flex",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 17.511666440000003,
+      "sourceSheet": 3,
+      "sourceRow": 16380
+    },
+    {
+      "supplier": "Eneco",
+      "product": "Eneco Zon & Wind Flex",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 17.905792899999998,
+      "sourceSheet": 3,
+      "sourceRow": 16391
+    },
+    {
+      "supplier": "Eneco",
+      "product": "Eneco Zon & Wind Flex One",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 16.5187929,
+      "sourceSheet": 3,
+      "sourceRow": 16398
+    },
+    {
+      "supplier": "Energie.be",
+      "product": "Elektriciteit professioneel online",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 16.8905887,
+      "sourceSheet": 3,
+      "sourceRow": 16409
+    },
+    {
+      "supplier": "ENGIE",
+      "product": "Direct Online Pro",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 17.905142047000002,
+      "sourceSheet": 3,
+      "sourceRow": 16446
+    },
+    {
+      "supplier": "ENGIE",
+      "product": "Easy pro",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 20.214922973000004,
+      "sourceSheet": 3,
+      "sourceRow": 16457
+    },
+    {
+      "supplier": "ENGIE",
+      "product": "Empower Pro",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 18.838142047,
+      "sourceSheet": 3,
+      "sourceRow": 16464
+    },
+    {
+      "supplier": "ENGIE",
+      "product": "Flow PRO",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 19.095540504000002,
+      "sourceSheet": 3,
+      "sourceRow": 16477
+    },
+    {
+      "supplier": "Luminus",
+      "product": "BasicFlex Pro Online",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 16.779924463999997,
+      "sourceSheet": 3,
+      "sourceRow": 16531
+    },
+    {
+      "supplier": "Luminus",
+      "product": "ComfyFlex Pro",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 19.738448431200002,
+      "sourceSheet": 3,
+      "sourceRow": 16538
+    },
+    {
+      "supplier": "Luminus",
+      "product": "ComfyFlex Pro+",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 21.358448431200003,
+      "sourceSheet": 3,
+      "sourceRow": 16545
+    },
+    {
+      "supplier": "Luminus",
+      "product": "MaxxFlex Pro",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 19.2874331339,
+      "sourceSheet": 3,
+      "sourceRow": 16556
+    },
+    {
+      "supplier": "Mega",
+      "product": "COSY GREEN FLEX",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 19.550618135,
+      "sourceSheet": 3,
+      "sourceRow": 16566
+    },
+    {
+      "supplier": "Mega",
+      "product": "OFFPEAK FLEX",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 18.650618135000002,
+      "sourceSheet": 3,
+      "sourceRow": 16577
+    },
+    {
+      "supplier": "Mega",
+      "product": "ONLINE FLEX",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 19.150618135000002,
+      "sourceSheet": 3,
+      "sourceRow": 16584
+    },
+    {
+      "supplier": "Mega",
+      "product": "Prepaid Flex",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 17.500618135,
+      "sourceSheet": 3,
+      "sourceRow": 16591
+    },
+    {
+      "supplier": "Mega",
+      "product": "SMART GREEN FLEX",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 19.550618135,
+      "sourceSheet": 3,
+      "sourceRow": 16598
+    },
+    {
+      "supplier": "Mega",
+      "product": "Speciale aanbieding Testaankoop Flex",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 18.75668187,
+      "sourceSheet": 3,
+      "sourceRow": 16605
+    },
+    {
+      "supplier": "OCTA+",
+      "product": "Boost Flex",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 16.63615807,
+      "sourceSheet": 3,
+      "sourceRow": 16612
+    },
+    {
+      "supplier": "OCTA+",
+      "product": "Eco Boost Flex",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 19.285209119999998,
+      "sourceSheet": 3,
+      "sourceRow": 16619
+    },
+    {
+      "supplier": "OCTA+",
+      "product": "Smart Variabel KZ",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 18.35912925,
+      "sourceSheet": 3,
+      "sourceRow": 16634
+    },
+    {
+      "supplier": "TotalEnergies",
+      "product": "proComfort Variabel",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 18.688910025,
+      "sourceSheet": 3,
+      "sourceRow": 16711
+    },
+    {
+      "supplier": "TotalEnergies",
+      "product": "proDrive",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 18.688910025,
+      "sourceSheet": 3,
+      "sourceRow": 16718
+    },
+    {
+      "supplier": "TotalEnergies",
+      "product": "proEssential Variabel",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 18.209099815,
+      "sourceSheet": 3,
+      "sourceRow": 16725
+    },
+    {
+      "supplier": "Ecofix Gas & Power",
+      "product": "Flexy Online Pro",
+      "energy": "gas",
+      "type": "variable",
+      "singleCents": 7.19772236,
+      "sourceSheet": 3,
+      "sourceRow": 17073
+    },
+    {
+      "supplier": "Ecofix Gas & Power",
+      "product": "Flexy Pro",
+      "energy": "gas",
+      "type": "variable",
+      "singleCents": 7.497722360000001,
+      "sourceSheet": 3,
+      "sourceRow": 17075
+    },
+    {
+      "supplier": "Elegant",
+      "product": "ComfortFlex",
+      "energy": "gas",
+      "type": "variable",
+      "singleCents": 7.551351899999999,
+      "sourceSheet": 3,
+      "sourceRow": 17077
+    },
+    {
+      "supplier": "Elegant",
+      "product": "Flex",
+      "energy": "gas",
+      "type": "variable",
+      "singleCents": 7.551351899999999,
+      "sourceSheet": 3,
+      "sourceRow": 17079
+    },
+    {
+      "supplier": "Eneco",
+      "product": "Eneco Aardgas Flex",
+      "energy": "gas",
+      "type": "variable",
+      "singleCents": 7.892636,
+      "sourceSheet": 3,
+      "sourceRow": 17081
+    },
+    {
+      "supplier": "Eneco",
+      "product": "Eneco Aardgas Flex One",
+      "energy": "gas",
+      "type": "variable",
+      "singleCents": 7.370636,
+      "sourceSheet": 3,
+      "sourceRow": 17083
+    },
+    {
+      "supplier": "Energie.be",
+      "product": "Gas professioneel online",
+      "energy": "gas",
+      "type": "variable",
+      "singleCents": 7.4813519,
+      "sourceSheet": 3,
+      "sourceRow": 17085
+    },
+    {
+      "supplier": "ENGIE",
+      "product": "Direct Online Pro",
+      "energy": "gas",
+      "type": "variable",
+      "singleCents": 7.697618039999998,
+      "sourceSheet": 3,
+      "sourceRow": 17087
+    },
+    {
+      "supplier": "ENGIE",
+      "product": "Easy pro",
+      "energy": "gas",
+      "type": "variable",
+      "singleCents": 8.617902039999999,
+      "sourceSheet": 3,
+      "sourceRow": 17089
+    },
+    {
+      "supplier": "ENGIE",
+      "product": "Empower Pro",
+      "energy": "gas",
+      "type": "variable",
+      "singleCents": 8.030618039999998,
+      "sourceSheet": 3,
+      "sourceRow": 17091
+    },
+    {
+      "supplier": "ENGIE",
+      "product": "Flow gas PRO",
+      "energy": "gas",
+      "type": "variable",
+      "singleCents": 8.030618039999998,
+      "sourceSheet": 3,
+      "sourceRow": 17093
+    },
+    {
+      "supplier": "Luminus",
+      "product": "BasicFlex Pro Online",
+      "energy": "gas",
+      "type": "variable",
+      "singleCents": 7.5961354996,
+      "sourceSheet": 3,
+      "sourceRow": 17105
+    },
+    {
+      "supplier": "Luminus",
+      "product": "ComfyFlex Pro",
+      "energy": "gas",
+      "type": "variable",
+      "singleCents": 8.6165540714,
+      "sourceSheet": 3,
+      "sourceRow": 17107
+    },
+    {
+      "supplier": "Luminus",
+      "product": "ComfyFlex Pro+",
+      "energy": "gas",
+      "type": "variable",
+      "singleCents": 8.9915540714,
+      "sourceSheet": 3,
+      "sourceRow": 17109
+    },
+    {
+      "supplier": "Luminus",
+      "product": "MaxxFlex Pro",
+      "energy": "gas",
+      "type": "variable",
+      "singleCents": 7.9574936956,
+      "sourceSheet": 3,
+      "sourceRow": 17111
+    },
+    {
+      "supplier": "Mega",
+      "product": "COSY FLEX",
+      "energy": "gas",
+      "type": "variable",
+      "singleCents": 8.719066159999999,
+      "sourceSheet": 3,
+      "sourceRow": 17113
+    },
+    {
+      "supplier": "Mega",
+      "product": "OFFPEAK FLEX",
+      "energy": "gas",
+      "type": "variable",
+      "singleCents": 7.959555679999999,
+      "sourceSheet": 3,
+      "sourceRow": 17115
+    },
+    {
+      "supplier": "Mega",
+      "product": "ONLINE FLEX",
+      "energy": "gas",
+      "type": "variable",
+      "singleCents": 8.51906616,
+      "sourceSheet": 3,
+      "sourceRow": 17117
+    },
+    {
+      "supplier": "Mega",
+      "product": "Prepaid Flex",
+      "energy": "gas",
+      "type": "variable",
+      "singleCents": 7.669066159999999,
+      "sourceSheet": 3,
+      "sourceRow": 17119
+    },
+    {
+      "supplier": "Mega",
+      "product": "SMART FLEX",
+      "energy": "gas",
+      "type": "variable",
+      "singleCents": 8.719066159999999,
+      "sourceSheet": 3,
+      "sourceRow": 17121
+    },
+    {
+      "supplier": "Mega",
+      "product": "Speciale aanbieding Testaankoop Flex",
+      "energy": "gas",
+      "type": "variable",
+      "singleCents": 8.161592099999998,
+      "sourceSheet": 3,
+      "sourceRow": 17123
+    },
+    {
+      "supplier": "OCTA+",
+      "product": "Eco Boost Flex",
+      "energy": "gas",
+      "type": "variable",
+      "singleCents": 8.67774267,
+      "sourceSheet": 3,
+      "sourceRow": 17125
+    },
+    {
+      "supplier": "OCTA+",
+      "product": "Smart Variabel KZ",
+      "energy": "gas",
+      "type": "variable",
+      "singleCents": 8.95520205,
+      "sourceSheet": 3,
+      "sourceRow": 17127
+    },
+    {
+      "supplier": "TotalEnergies",
+      "product": "proComfort Variabel",
+      "energy": "gas",
+      "type": "variable",
+      "singleCents": 7.586996451999999,
+      "sourceSheet": 3,
+      "sourceRow": 17141
+    },
+    {
+      "supplier": "TotalEnergies",
+      "product": "proEssential Variabel",
+      "energy": "gas",
+      "type": "variable",
+      "singleCents": 7.600813724,
+      "sourceSheet": 3,
+      "sourceRow": 17143
+    },
+    {
+      "supplier": "Elegant",
+      "product": "Zeker & Vast",
+      "energy": "electricity",
+      "type": "fixed",
+      "singleCents": 17.55,
+      "sourceSheet": 5,
+      "sourceRow": 4510
+    },
+    {
+      "supplier": "Eneco",
+      "product": "Eneco Zon & Wind Fix One",
+      "energy": "electricity",
+      "type": "fixed",
+      "singleCents": 19.418,
+      "sourceSheet": 5,
+      "sourceRow": 4517
+    },
+    {
+      "supplier": "Eneco",
+      "product": "Eneco Zon & Wind Vast",
+      "energy": "electricity",
+      "type": "fixed",
+      "singleCents": 19.908,
+      "sourceSheet": 5,
+      "sourceRow": 4524
+    },
+    {
+      "supplier": "Energie.be",
+      "product": "Elektriciteit vast professioneel online",
+      "energy": "electricity",
+      "type": "fixed",
+      "singleCents": 20.327,
+      "sourceSheet": 5,
+      "sourceRow": 4531
+    },
+    {
+      "supplier": "ENGIE",
+      "product": "Easy pro",
+      "energy": "electricity",
+      "type": "fixed",
+      "singleCents": 20.975,
+      "sourceSheet": 5,
+      "sourceRow": 4538
+    },
+    {
+      "supplier": "ENGIE",
+      "product": "Empower Pro",
+      "energy": "electricity",
+      "type": "fixed",
+      "singleCents": 19.839,
+      "sourceSheet": 5,
+      "sourceRow": 4545
+    },
+    {
+      "supplier": "Luminus",
+      "product": "BasicFix Pro Online",
+      "energy": "electricity",
+      "type": "fixed",
+      "singleCents": 18.77941,
+      "sourceSheet": 5,
+      "sourceRow": 4552
+    },
+    {
+      "supplier": "Luminus",
+      "product": "Comfy Pro",
+      "energy": "electricity",
+      "type": "fixed",
+      "singleCents": 21.17524,
+      "sourceSheet": 5,
+      "sourceRow": 4559
+    },
+    {
+      "supplier": "Luminus",
+      "product": "Comfy Pro+",
+      "energy": "electricity",
+      "type": "fixed",
+      "singleCents": 22.79124,
+      "sourceSheet": 5,
+      "sourceRow": 4566
+    },
+    {
+      "supplier": "Luminus",
+      "product": "MaxxFix Pro",
+      "energy": "electricity",
+      "type": "fixed",
+      "singleCents": 20.17931,
+      "sourceSheet": 5,
+      "sourceRow": 4573
+    },
+    {
+      "supplier": "Mega",
+      "product": "COSY GREEN FIXED",
+      "energy": "electricity",
+      "type": "fixed",
+      "singleCents": 20.212,
+      "sourceSheet": 5,
+      "sourceRow": 4580
+    },
+    {
+      "supplier": "Mega",
+      "product": "OFFPEAK GREEN FIXED",
+      "energy": "electricity",
+      "type": "fixed",
+      "singleCents": 19.442,
+      "sourceSheet": 5,
+      "sourceRow": 4587
+    },
+    {
+      "supplier": "Mega",
+      "product": "ONLINE FIXED",
+      "energy": "electricity",
+      "type": "fixed",
+      "singleCents": 20.672,
+      "sourceSheet": 5,
+      "sourceRow": 4594
+    },
+    {
+      "supplier": "Mega",
+      "product": "PREPAID FIXED",
+      "energy": "electricity",
+      "type": "fixed",
+      "singleCents": 19.022,
+      "sourceSheet": 5,
+      "sourceRow": 4601
+    },
+    {
+      "supplier": "Mega",
+      "product": "SMART GREEN FIXED",
+      "energy": "electricity",
+      "type": "fixed",
+      "singleCents": 20.212,
+      "sourceSheet": 5,
+      "sourceRow": 4608
+    },
+    {
+      "supplier": "Mega",
+      "product": "Speciale aanbieding Testaankoop Fixed",
+      "energy": "electricity",
+      "type": "fixed",
+      "singleCents": 21.372,
+      "sourceSheet": 5,
+      "sourceRow": 4615
+    },
+    {
+      "supplier": "Mega",
+      "product": "Zen 3 Jaar Vast",
+      "energy": "electricity",
+      "type": "fixed",
+      "singleCents": 19.862,
+      "sourceSheet": 5,
+      "sourceRow": 4622
+    },
+    {
+      "supplier": "TotalEnergies",
+      "product": "proComfort Vast",
+      "energy": "electricity",
+      "type": "fixed",
+      "singleCents": 19.73784,
+      "sourceSheet": 5,
+      "sourceRow": 4629
+    },
+    {
+      "supplier": "Elegant",
+      "product": "Zeker & Vast",
+      "energy": "gas",
+      "type": "fixed",
+      "singleCents": 8.585,
+      "sourceSheet": 5,
+      "sourceRow": 4695
+    },
+    {
+      "supplier": "Eneco",
+      "product": "Eneco Aardgas Fix One",
+      "energy": "gas",
+      "type": "fixed",
+      "singleCents": 8.424,
+      "sourceSheet": 5,
+      "sourceRow": 4697
+    },
+    {
+      "supplier": "Eneco",
+      "product": "Eneco Aardgas Vast",
+      "energy": "gas",
+      "type": "fixed",
+      "singleCents": 8.702,
+      "sourceSheet": 5,
+      "sourceRow": 4699
+    },
+    {
+      "supplier": "Energie.be",
+      "product": "Gas vast professioneel online",
+      "energy": "gas",
+      "type": "fixed",
+      "singleCents": 8.14,
+      "sourceSheet": 5,
+      "sourceRow": 4701
+    },
+    {
+      "supplier": "ENGIE",
+      "product": "Easy pro",
+      "energy": "gas",
+      "type": "fixed",
+      "singleCents": 9.797,
+      "sourceSheet": 5,
+      "sourceRow": 4703
+    },
+    {
+      "supplier": "ENGIE",
+      "product": "Empower Pro",
+      "energy": "gas",
+      "type": "fixed",
+      "singleCents": 9.797,
+      "sourceSheet": 5,
+      "sourceRow": 4705
+    },
+    {
+      "supplier": "Luminus",
+      "product": "BasicFix Pro Online",
+      "energy": "gas",
+      "type": "fixed",
+      "singleCents": 8.22529,
+      "sourceSheet": 5,
+      "sourceRow": 4707
+    },
+    {
+      "supplier": "Luminus",
+      "product": "Comfy Pro",
+      "energy": "gas",
+      "type": "fixed",
+      "singleCents": 9.20071,
+      "sourceSheet": 5,
+      "sourceRow": 4709
+    },
+    {
+      "supplier": "Luminus",
+      "product": "Comfy Pro+",
+      "energy": "gas",
+      "type": "fixed",
+      "singleCents": 9.57571,
+      "sourceSheet": 5,
+      "sourceRow": 4711
+    },
+    {
+      "supplier": "Luminus",
+      "product": "MaxxFix Pro",
+      "energy": "gas",
+      "type": "fixed",
+      "singleCents": 8.8883,
+      "sourceSheet": 5,
+      "sourceRow": 4713
+    },
+    {
+      "supplier": "Mega",
+      "product": "COSY FIXED",
+      "energy": "gas",
+      "type": "fixed",
+      "singleCents": 8.293,
+      "sourceSheet": 5,
+      "sourceRow": 4715
+    },
+    {
+      "supplier": "Mega",
+      "product": "OFFPEAK FIXED",
+      "energy": "gas",
+      "type": "fixed",
+      "singleCents": 7.928,
+      "sourceSheet": 5,
+      "sourceRow": 4717
+    },
+    {
+      "supplier": "Mega",
+      "product": "ONLINE FIXED",
+      "energy": "gas",
+      "type": "fixed",
+      "singleCents": 8.828,
+      "sourceSheet": 5,
+      "sourceRow": 4719
+    },
+    {
+      "supplier": "Mega",
+      "product": "PREPAID FIXED",
+      "energy": "gas",
+      "type": "fixed",
+      "singleCents": 7.978,
+      "sourceSheet": 5,
+      "sourceRow": 4721
+    },
+    {
+      "supplier": "Mega",
+      "product": "SMART FIXED",
+      "energy": "gas",
+      "type": "fixed",
+      "singleCents": 8.293,
+      "sourceSheet": 5,
+      "sourceRow": 4723
+    },
+    {
+      "supplier": "Mega",
+      "product": "Speciale aanbieding Testaankoop Fixed",
+      "energy": "gas",
+      "type": "fixed",
+      "singleCents": 8.778,
+      "sourceSheet": 5,
+      "sourceRow": 4725
+    },
+    {
+      "supplier": "Mega",
+      "product": "Zen 3 Jaar Vast",
+      "energy": "gas",
+      "type": "fixed",
+      "singleCents": 8.143,
+      "sourceSheet": 5,
+      "sourceRow": 4727
+    },
+    {
+      "supplier": "TotalEnergies",
+      "product": "proComfort Vast",
+      "energy": "gas",
+      "type": "fixed",
+      "singleCents": 7.49,
+      "sourceSheet": 5,
+      "sourceRow": 4729
+    }
+  ],
+  "excluded": [
+    {
+      "supplier": "ENGIE",
+      "product": "Empower Pro met Flextime",
+      "reason": "conditional time/vacancy product"
+    },
+    {
+      "supplier": "ENGIE",
+      "product": "Leegstaande woning",
+      "reason": "conditional time/vacancy product"
+    },
+    {
+      "supplier": "Luminus",
+      "product": "SmartFlex Pro",
+      "reason": "conditional time/vacancy product"
+    },
+    {
+      "supplier": "ENGIE",
+      "product": "Leegstaande woning",
+      "reason": "conditional time/vacancy product"
+    }
+  ]
+}

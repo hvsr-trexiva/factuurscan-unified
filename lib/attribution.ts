@@ -1,0 +1,3 @@
+const keys=["utm_source","utm_medium","utm_campaign","utm_content","utm_term"];
+export function requestAttribution(req:Request){try{const raw=req.headers.get("x-fs-attribution")||"{}";if(raw.length>2000)return {};const p=JSON.parse(raw);return Object.fromEntries(keys.filter(k=>typeof p?.[k]==="string").map(k=>[k,p[k].replace(/[<>\r\n]/g,"").slice(0,160)]));}catch{return {}}}
+export function submissionAttribution(){if(typeof location==="undefined")return "{}";const q=new URLSearchParams(location.search);return JSON.stringify(Object.fromEntries(keys.filter(k=>q.has(k)).map(k=>[k,q.get(k)!.slice(0,160)])));}

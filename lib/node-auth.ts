@@ -1,0 +1,5 @@
+import {createHmac,timingSafeEqual} from 'node:crypto';
+const secret=()=>{if(!process.env.AUTH_SECRET||process.env.AUTH_SECRET.length<32)throw Error('AUTH_SECRET needs 32 or more characters');return process.env.AUTH_SECRET;};
+export function sessionToken(email:string){const data=Buffer.from(JSON.stringify({email,expires:Date.now()+8*3600000})).toString('base64url');return data+'.'+createHmac('sha256',secret()).update(data).digest('hex');}
+export function verifySession(value:string){try{const [data,signature]=value.split('.');const expected=createHmac('sha256',secret()).update(data).digest('hex');if(!signature||signature.length!==expected.length||!timingSafeEqual(Buffer.from(signature),Buffer.from(expected)))return null;const user=JSON.parse(Buffer.from(data,'base64url').toString());return user.expires>Date.now()&&user.email===process.env.ADMIN_EMAIL?user:null;}catch{return null;}}
+export function equal(a:string,b:string){const aa=Buffer.from(a),bb=Buffer.from(b);return aa.length===bb.length&&timingSafeEqual(aa,bb);}

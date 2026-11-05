@@ -1,0 +1,21 @@
+{
+  "month": "2026-10",
+  "selection": "Tien zakelijke leveranciers met prijsdata. Actuele rangorde op aantal klanten niet vastgesteld. EnergyVision heeft geen zakelijke oktoberregels in de gecontroleerde bron.",
+  "marketSource": "https://www.vlaamsenutsregulator.be/cijfers/dashboard-marktaandelen-en-switches",
+  "suppliers": [
+    "ENGIE",
+    "Luminus",
+    "Eneco",
+    "TotalEnergies",
+    "Mega",
+    "Elegant",
+    "Energie.be",
+    "OCTA+",
+    "Ecopower",
+    "Ecofix Gas & Power"
+  ],
+  "additional": [],
+  "limitations": {
+    "EnergyVision": "Geen zakelijke oktoberregels in de gecontroleerde bron; geen residentiële tarieven overgenomen."
+  }
+}

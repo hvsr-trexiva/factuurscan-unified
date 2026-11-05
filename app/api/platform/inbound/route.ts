@@ -1,0 +1,2 @@
+import {platformAuthorized,json} from "@/lib/server";import {POST as upload} from "@/app/api/submissions/route";
+export async function POST(req:Request){if(!await platformAuthorized(req))return json({},401);if(req.headers.get("x-mail-authentication")!=="validated")return json({error:"Authenticated mailbox adapter must verify sender, attachment and explicit analysis request."},400);return upload(req);}

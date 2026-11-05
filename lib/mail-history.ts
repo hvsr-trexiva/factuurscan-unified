@@ -1,0 +1,2 @@
+import {db} from "./server";
+export async function recordMailContent(id:string,requestId:string,subject:string,text:string){const redacted=text.replace(/#[a-f0-9-]{36}:[a-f0-9]{64}/gi,"#[privélink]");await db().prepare("INSERT OR IGNORE INTO audit(id,request_id,event,created_at,details) VALUES (?,?,'mail_prepared',?,?)").bind("mail-content:"+id,requestId,new Date().toISOString(),JSON.stringify({messageId:id,subject,text:redacted.slice(0,12000)})).run();}

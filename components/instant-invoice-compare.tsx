@@ -1,0 +1,3 @@
+"use client";
+import type {BusinessTariff} from "@/lib/business-compare";
+export default function InstantInvoiceCompare({suggestion}:{suggestion:string;onSelect:(t:BusinessTariff)=>void}){return <div className="instant-invoice"><h3>Uw voorstel uit ons eigen aanbod</h3><p>{suggestion?`Gevonden jaarafname: ${suggestion} kWh. Controleer de periode en waarde hieronder.`:"Bevestig uw verbruik voor uw persoonlijke voorstel."}</p><p>We gebruiken onze eigen maandtabel en uw bevestigde factuurgegevens. Uw dossier toont daarna het prijsverschil en de voorwaarden. U tekent uw gekozen energiecontract afzonderlijk.</p><a href="/energie-vergelijken">Onze vergelijkingsmodule openen →</a></div>}

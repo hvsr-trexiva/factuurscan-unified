@@ -1,0 +1,2 @@
+export type CheckInput={kwh:number;cost:number;days:number;advances:number};
+export function quickCheck(v:CheckInput){if(Object.values(v).some(x=>!Number.isFinite(x))||v.kwh<=0||v.kwh>1e9||v.cost<0||v.cost>1e8||v.advances<0||v.advances>1e8||!Number.isInteger(v.days)||v.days<1||v.days>3660)throw Error("Controleer de volumes, bedragen en periode.");return {unitCost:v.cost/v.kwh,dailyCost:v.cost/v.days,annualCost:v.cost/v.days*365,annualKwh:v.kwh/v.days*365,balance:Math.round((v.cost-v.advances)*100)/100};}

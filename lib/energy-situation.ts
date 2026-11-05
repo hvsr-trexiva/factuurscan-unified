@@ -1,0 +1,7 @@
+import {z} from "zod";
+export const heatingChoices=[{value:"unknown",label:"Ik weet het niet"},{value:"gas",label:"Aardgas"},{value:"heat_pump",label:"Warmtepomp"},{value:"electric",label:"Elektrische verwarming"},{value:"oil",label:"Stookolie"},{value:"district",label:"Warmtenet"},{value:"other",label:"Anders / geen verwarming"}] as const;
+export const situationSchema=z.object({solar:z.boolean().nullable().default(null),meterType:z.enum(["unknown","digital","analogue","amr"]).default("unknown"),register:z.enum(["unknown","single","day_night","exclusive_night"]).default("unknown"),floorAreaM2:z.number().finite().positive().max(100000).nullable().default(null),heating:z.enum(["unknown","gas","heat_pump","electric","oil","district","other"]).default("unknown")}).strict();
+export type EnergySituation=z.infer<typeof situationSchema>;
+export const areaScenarioSchema=z.object({areaM2:z.number().finite().positive().max(100000),intensityKwhM2:z.number().finite().positive().max(1000)}).strict();
+export function areaScenarioKwh(area:number,intensity:number){const kwh=Math.round(area*intensity);return Number.isFinite(kwh)&&kwh>0&&kwh<=100000?kwh:null;}
+export const meterScenarioNote="Uw maandtabel bevat enkelvoudige energieprijzen. Dag/nacht en exclusief nacht worden bewaard; het voorbeeld gebruikt de tabelprijs op uw totale netafname. Injectievergoeding en specifieke registertarieven zijn niet inbegrepen.";

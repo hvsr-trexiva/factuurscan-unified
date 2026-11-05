@@ -1,0 +1,5 @@
+// Format validation never establishes registration, ownership or a meter mandate.
+export function companyNumber(input:string):string|null{const n=input.trim().replace(/^BE\s*/i,"").replace(/[.\s-]/g,"");return /^[01]\d{9}$/.test(n)&&Number(n.slice(0,8))>0&&97-Number(n.slice(0,8))%97===Number(n.slice(8))?n:null;}
+export function eanNumber(input:string):string|null{const n=input.trim().replace(/\s/g,"");if(!/^54\d{16}$/.test(n))return null;const sum=[...n.slice(0,-1)].reverse().reduce((s,v,i)=>s+Number(v)*(i%2===0?3:1),0);return (10-sum%10)%10===Number(n[17])?n:null;}
+export type SectorRow={sector:string;subsector:string;points:number;kwh:number};
+export function sectorIndex(input:{annualKwh:number;points:number;year:number},row:SectorRow,referenceYear:number){if(!Number.isFinite(input.annualKwh)||input.annualKwh<=0||input.annualKwh>1e9||!Number.isInteger(input.points)||input.points<1||input.points>10000||input.year!==referenceYear||!Number.isInteger(row.points)||row.points<30||!Number.isFinite(row.kwh)||row.kwh<=0)return null;const mean=row.kwh/row.points,own=input.annualKwh/input.points;return {mean,own,index:own/mean*100};}

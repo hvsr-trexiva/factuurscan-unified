@@ -1,0 +1,10 @@
+"use client";
+import {useId,useState} from "react";
+import Localize from "./site-language";
+import {eanNumber} from "@/lib/company-profile";
+export function eanInputIssue(value:string){if(!value)return "";if(!/^54\d{0,16}$/.test(value))return "Een EAN begint met 54 en bevat alleen 18 cijfers.";if(value.length!==18)return `Nog ${18-value.length} cijfers invullen.`;return eanNumber(value)?"":"Controleer de EAN: het controlecijfer klopt niet.";}
+export default function EanField({label,value,onChange,disabled=false}:{label:string;value:string;onChange:(value:string)=>void;disabled?:boolean}){
+ const code=value.replace(/\s/g,"");
+ const id=useId(),[pasteError,setPasteError]=useState(""),[touched,setTouched]=useState(false),issue=pasteError||eanInputIssue(code),invalid=!!issue&&(touched||code.length>=18||!!pasteError);
+ return <Localize><label className="checkout-field ean-field" htmlFor={id}>{label}<span className={`ean-input ${invalid?"ean-invalid":""}`}><span className="ean-prefix" aria-hidden="true">54</span><input id={id} inputMode="numeric" autoComplete="off" maxLength={16} pattern="[0-9]{16}" disabled={disabled} value={code.startsWith("54")?code.slice(2):code} aria-label={label+" — vul de 16 cijfers na 54 in"} aria-describedby={id+"-hint"} aria-invalid={invalid} placeholder="16 volgende cijfers" onBlur={()=>setTouched(true)} onChange={e=>{setPasteError("");const tail=e.target.value.replace(/\D/g,"");onChange(tail?"54"+tail:"")}} onPaste={e=>{e.preventDefault();const digits=e.clipboardData.getData("text").replace(/\s/g,"");if(!/^\d+$/.test(digits)||digits.length>16&&!(digits.length===18&&digits.startsWith("54"))){setPasteError("Plak een volledige EAN van 18 cijfers die begint met 54, of de 16 cijfers na 54.");return;}setPasteError("");onChange(digits.length===18?digits:"54"+digits)}}/></span><small id={id+"-hint"} className={invalid?"field-error":""}>{invalid?issue:code?eanNumber(code)?"18/18 cijfers · controlecijfer correct":`${code.length}/18 cijfers · ${18-code.length} nog in te vullen`:"54 staat al klaar. Vul nog 16 cijfers in, of plak uw volledige EAN."}</small></label></Localize>;
+}

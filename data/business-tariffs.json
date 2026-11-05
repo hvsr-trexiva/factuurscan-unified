@@ -1,0 +1,3496 @@
+{
+  "month": "2026-10",
+  "publishedAt": "2026-10-15",
+  "importedAt": "2026-10-16",
+  "source": "https://www.vlaamsenutsregulator.be/cijfers/v-test-data-en-energieprijscurves",
+  "sourceFile": "https://assets.vlaamsenutsregulator.be/2026-10/202610-v-test-data-exclbtw%20v2_0.xlsx?VersionId=ufWqr3DPEaKhTD0JCL1DMWDmRaM7q1PZ",
+  "sourceSha256": "19b144ba854da3eda6bc9375dbc0a8b8f269defda1bf9dc526edb6356c5bddeb",
+  "products": [
+    {
+      "id": "148de930c98969b16357",
+      "supplier": "Ecofix",
+      "product": "Flexy Online Pro",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 15.985843950000001,
+      "greenCents": 1.1415,
+      "wkkCents": 0.3679,
+      "fixedAnnual": 10.0,
+      "unitCents": 17.49524395,
+      "signupUrl": "https://portal.ecofixgp.be/contract-type/flexyonl",
+      "termsUrl": "https://www.ecofixgp.be/tarieven/tariefkaarten",
+      "sourceSheet": 3,
+      "sourceRows": [
+        {
+          "row": 16344,
+          "component": "Enkelvoudige meter dagtarief (c€/kWh)",
+          "value": 15.985843950000001,
+          "formula": {
+            "Z": "0.10100000000000001",
+            "AD": "0.74",
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16345,
+          "component": "Kosten groene stroom (c€/kWh)",
+          "value": 1.1415,
+          "formula": {
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16346,
+          "component": "Kosten WKK (c€/kWh)",
+          "value": 0.3679,
+          "formula": {
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16347,
+          "component": "Tweevoudige meter dagtarief (c€/kWh)",
+          "value": 15.985843950000001,
+          "formula": {
+            "Z": "0.10100000000000001",
+            "AD": "0.74",
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16348,
+          "component": "Tweevoudige meter nachttarief (c€/kWh)",
+          "value": 15.985843950000001,
+          "formula": {
+            "Z": "0.10100000000000001",
+            "AD": "0.74",
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16349,
+          "component": "Uitsluitend nachtmeter (c€/kWh)",
+          "value": 15.985843950000001,
+          "formula": {
+            "Z": "0.10100000000000001",
+            "AD": "0.74",
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16350,
+          "component": "Vaste vergoeding (€)",
+          "value": 10.0,
+          "formula": {
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        }
+      ],
+      "dayCents": 15.985843950000001,
+      "nightCents": 15.985843950000001,
+      "doubleFixedAnnual": 10.0
+    },
+    {
+      "id": "9d09bc77b6a3a9d4c49e",
+      "supplier": "Ecofix",
+      "product": "Flexy Pro",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 16.5967929,
+      "greenCents": 1.1415,
+      "wkkCents": 0.3679,
+      "fixedAnnual": 60.0,
+      "unitCents": 18.1061929,
+      "signupUrl": "https://portal.ecofixgp.be/contract-type/flexy",
+      "termsUrl": "https://www.ecofixgp.be/tarieven/tariefkaarten",
+      "sourceSheet": 3,
+      "sourceRows": [
+        {
+          "row": 16351,
+          "component": "Enkelvoudige meter dagtarief (c€/kWh)",
+          "value": 16.5967929,
+          "formula": {
+            "Z": "0.10199999999999999",
+            "AD": "1.2",
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16352,
+          "component": "Kosten groene stroom (c€/kWh)",
+          "value": 1.1415,
+          "formula": {
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16353,
+          "component": "Kosten WKK (c€/kWh)",
+          "value": 0.3679,
+          "formula": {
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16354,
+          "component": "Tweevoudige meter dagtarief (c€/kWh)",
+          "value": 16.5967929,
+          "formula": {
+            "Z": "0.10199999999999999",
+            "AD": "1.2",
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16355,
+          "component": "Tweevoudige meter nachttarief (c€/kWh)",
+          "value": 16.5967929,
+          "formula": {
+            "Z": "0.10199999999999999",
+            "AD": "1.2",
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16356,
+          "component": "Uitsluitend nachtmeter (c€/kWh)",
+          "value": 16.5967929,
+          "formula": {
+            "Z": "0.10199999999999999",
+            "AD": "1.2",
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16357,
+          "component": "Vaste vergoeding (€)",
+          "value": 60.0,
+          "formula": {
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        }
+      ],
+      "dayCents": 16.5967929,
+      "nightCents": 16.5967929,
+      "doubleFixedAnnual": 60.0
+    },
+    {
+      "id": "a1e0486a717312099515",
+      "supplier": "Eneco",
+      "product": "Eneco Zon & Wind Flex",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 17.905792899999998,
+      "greenCents": 1.093,
+      "wkkCents": 0.336,
+      "fixedAnnual": 95.0,
+      "unitCents": 19.334792899999997,
+      "signupUrl": "https://eneco.be/nl/simulatie/",
+      "termsUrl": "https://eneco.be/nl/kmo/elektriciteit-gas/tariefkaarten/",
+      "sourceSheet": 3,
+      "sourceRows": [
+        {
+          "row": 16391,
+          "component": "Enkelvoudige meter dagtarief (c€/kWh)",
+          "value": 17.905792899999998,
+          "formula": {
+            "Z": "0.10199999999999999",
+            "AA": "0",
+            "AB": "0",
+            "AD": "2.5089999999999999",
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16392,
+          "component": "Kosten groene stroom (c€/kWh)",
+          "value": 1.093,
+          "formula": {
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16393,
+          "component": "Kosten WKK (c€/kWh)",
+          "value": 0.336,
+          "formula": {
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16394,
+          "component": "Tweevoudige meter dagtarief (c€/kWh)",
+          "value": 17.905792899999998,
+          "formula": {
+            "Z": "0.10199999999999999",
+            "AA": "0",
+            "AB": "0",
+            "AD": "2.5089999999999999",
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16395,
+          "component": "Tweevoudige meter nachttarief (c€/kWh)",
+          "value": 17.905792899999998,
+          "formula": {
+            "Z": "0.10199999999999999",
+            "AA": "0",
+            "AB": "0",
+            "AD": "2.5089999999999999",
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16396,
+          "component": "Uitsluitend nachtmeter (c€/kWh)",
+          "value": 17.905792899999998,
+          "formula": {
+            "Z": "0.10199999999999999",
+            "AA": "0",
+            "AB": "0",
+            "AD": "2.5089999999999999",
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16397,
+          "component": "Vaste vergoeding (€)",
+          "value": 95.0,
+          "formula": {
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        }
+      ],
+      "dayCents": 17.905792899999998,
+      "nightCents": 17.905792899999998,
+      "doubleFixedAnnual": 95.0
+    },
+    {
+      "id": "4dcfe8c83e3ba3a30d02",
+      "supplier": "Eneco",
+      "product": "Eneco Zon & Wind Flex One",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 16.5187929,
+      "greenCents": 1.093,
+      "wkkCents": 0.336,
+      "fixedAnnual": 95.0,
+      "unitCents": 17.9477929,
+      "signupUrl": "https://eneco.be/nl/simulatie/",
+      "termsUrl": "https://eneco.be/nl/kmo/elektriciteit-gas/tariefkaarten/",
+      "sourceSheet": 3,
+      "sourceRows": [
+        {
+          "row": 16398,
+          "component": "Enkelvoudige meter dagtarief (c€/kWh)",
+          "value": 16.5187929,
+          "formula": {
+            "Z": "0.10199999999999999",
+            "AA": "0",
+            "AB": "0",
+            "AD": "1.1220000000000001",
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16399,
+          "component": "Kosten groene stroom (c€/kWh)",
+          "value": 1.093,
+          "formula": {
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16400,
+          "component": "Kosten WKK (c€/kWh)",
+          "value": 0.336,
+          "formula": {
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16401,
+          "component": "Tweevoudige meter dagtarief (c€/kWh)",
+          "value": 16.5187929,
+          "formula": {
+            "Z": "0.10199999999999999",
+            "AA": "0",
+            "AB": "0",
+            "AD": "1.1220000000000001",
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16402,
+          "component": "Tweevoudige meter nachttarief (c€/kWh)",
+          "value": 16.5187929,
+          "formula": {
+            "Z": "0.10199999999999999",
+            "AA": "0",
+            "AB": "0",
+            "AD": "1.1220000000000001",
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16403,
+          "component": "Uitsluitend nachtmeter (c€/kWh)",
+          "value": 16.5187929,
+          "formula": {
+            "Z": "0.10199999999999999",
+            "AA": "0",
+            "AB": "0",
+            "AD": "1.1220000000000001",
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16404,
+          "component": "Vaste vergoeding (€)",
+          "value": 95.0,
+          "formula": {
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        }
+      ],
+      "dayCents": 16.5187929,
+      "nightCents": 16.5187929,
+      "doubleFixedAnnual": 95.0
+    },
+    {
+      "id": "492c80765f9afc4f03a0",
+      "supplier": "Energie.be",
+      "product": "Elektriciteit professioneel online",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 16.8905887,
+      "greenCents": 1.103,
+      "wkkCents": 0.364,
+      "fixedAnnual": 60.0,
+      "unitCents": 18.3575887,
+      "signupUrl": "https://www.energie.be/nl/bereken-je-prijs",
+      "termsUrl": "https://www.energie.be/",
+      "sourceSheet": 3,
+      "sourceRows": [
+        {
+          "row": 16409,
+          "component": "Enkelvoudige meter dagtarief (c€/kWh)",
+          "value": 16.8905887,
+          "formula": {
+            "Z": "0.106",
+            "AD": "0.89",
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16410,
+          "component": "Kosten groene stroom (c€/kWh)",
+          "value": 1.103,
+          "formula": {
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16411,
+          "component": "Kosten WKK (c€/kWh)",
+          "value": 0.364,
+          "formula": {
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16412,
+          "component": "Tweevoudige meter dagtarief (c€/kWh)",
+          "value": 16.8905887,
+          "formula": {
+            "Z": "0.106",
+            "AD": "0.89",
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16413,
+          "component": "Tweevoudige meter nachttarief (c€/kWh)",
+          "value": 16.8905887,
+          "formula": {
+            "Z": "0.106",
+            "AD": "0.89",
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16414,
+          "component": "Uitsluitend nachtmeter (c€/kWh)",
+          "value": 16.8905887,
+          "formula": {
+            "Z": "0.106",
+            "AD": "0.89",
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16415,
+          "component": "Vaste vergoeding (€)",
+          "value": 60.0,
+          "formula": {
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        }
+      ],
+      "dayCents": 16.8905887,
+      "nightCents": 16.8905887,
+      "doubleFixedAnnual": 60.0
+    },
+    {
+      "id": "a15187577d787118ebd9",
+      "supplier": "ENGIE",
+      "product": "Direct Online Pro",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 17.905142047000002,
+      "greenCents": 1.1,
+      "wkkCents": 0.392,
+      "fixedAnnual": 30.0,
+      "unitCents": 19.397142047000003,
+      "signupUrl": "https://www.engie.be/nl/professionals/elektriciteit-gas",
+      "termsUrl": "https://www.engie.be/nl/professionals/elektriciteit-gas",
+      "sourceSheet": 3,
+      "sourceRows": [
+        {
+          "row": 16446,
+          "component": "Enkelvoudige meter dagtarief (c€/kWh)",
+          "value": 17.905142047000002,
+          "formula": {
+            "Z": "0.1129",
+            "AD": "1.5328999999999999",
+            "L": "145.01543000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16447,
+          "component": "Kosten groene stroom (c€/kWh)",
+          "value": 1.1,
+          "formula": {
+            "L": "145.01543000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16448,
+          "component": "Kosten WKK (c€/kWh)",
+          "value": 0.392,
+          "formula": {
+            "L": "145.01543000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16449,
+          "component": "Tweevoudige meter dagtarief (c€/kWh)",
+          "value": 19.860354981,
+          "formula": {
+            "Z": "0.12670000000000001",
+            "AD": "1.4869000000000001",
+            "L": "145.01543000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16450,
+          "component": "Tweevoudige meter nachttarief (c€/kWh)",
+          "value": 15.652402882000002,
+          "formula": {
+            "Z": "9.74E-2",
+            "AD": "1.5279",
+            "L": "145.01543000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16451,
+          "component": "Uitsluitend nachtmeter (c€/kWh)",
+          "value": 15.652402882000002,
+          "formula": {
+            "Z": "9.74E-2",
+            "AD": "1.5279",
+            "L": "145.01543000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16452,
+          "component": "Vaste vergoeding (€)",
+          "value": 30.0,
+          "formula": {
+            "L": "145.01543000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        }
+      ],
+      "dayCents": 19.860354981,
+      "nightCents": 15.652402882000002,
+      "doubleFixedAnnual": 30.0
+    },
+    {
+      "id": "5962a4ccb4f3c4660b24",
+      "supplier": "ENGIE",
+      "product": "Easy pro",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 20.214922973000004,
+      "greenCents": 1.1,
+      "wkkCents": 0.392,
+      "fixedAnnual": 62.0,
+      "unitCents": 21.706922973000005,
+      "signupUrl": "https://www.engie.be/nl/professionals/elektriciteit-gas",
+      "termsUrl": "https://www.engie.be/nl/professionals/elektriciteit-gas",
+      "sourceSheet": 3,
+      "sourceRows": [
+        {
+          "row": 16457,
+          "component": "Enkelvoudige meter dagtarief (c€/kWh)",
+          "value": 20.214922973000004,
+          "formula": {
+            "Z": "0.1129",
+            "AD": "3.8637999999999999",
+            "L": "144.82837000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16458,
+          "component": "Kosten groene stroom (c€/kWh)",
+          "value": 1.1,
+          "formula": {
+            "L": "144.82837000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16459,
+          "component": "Kosten WKK (c€/kWh)",
+          "value": 0.392,
+          "formula": {
+            "L": "144.82837000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16460,
+          "component": "Tweevoudige meter dagtarief (c€/kWh)",
+          "value": 22.126554479000003,
+          "formula": {
+            "Z": "0.12670000000000001",
+            "AD": "3.7768000000000002",
+            "L": "144.82837000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16461,
+          "component": "Tweevoudige meter nachttarief (c€/kWh)",
+          "value": 17.484566075,
+          "formula": {
+            "Z": "9.7500000000000003E-2",
+            "AD": "3.3637999999999999",
+            "L": "144.82837000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16462,
+          "component": "Uitsluitend nachtmeter (c€/kWh)",
+          "value": 17.484566075,
+          "formula": {
+            "Z": "9.7500000000000003E-2",
+            "AD": "3.3637999999999999",
+            "L": "144.82837000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16463,
+          "component": "Vaste vergoeding (€)",
+          "value": 62.0,
+          "formula": {
+            "L": "144.82837000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        }
+      ],
+      "dayCents": 22.126554479000003,
+      "nightCents": 17.484566075,
+      "doubleFixedAnnual": 62.0
+    },
+    {
+      "id": "32689aee81128c8573ce",
+      "supplier": "ENGIE",
+      "product": "Empower Pro",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 18.838142047,
+      "greenCents": 1.1,
+      "wkkCents": 0.392,
+      "fixedAnnual": 95.0,
+      "unitCents": 20.330142047000002,
+      "signupUrl": "https://www.engie.be/nl/professionals/elektriciteit-gas",
+      "termsUrl": "https://www.engie.be/nl/professionals/elektriciteit-gas",
+      "sourceSheet": 3,
+      "sourceRows": [
+        {
+          "row": 16464,
+          "component": "Enkelvoudige meter dagtarief (c€/kWh)",
+          "value": 18.838142047,
+          "formula": {
+            "Z": "0.1129",
+            "AD": "2.4659",
+            "L": "145.01543000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16465,
+          "component": "Kosten groene stroom (c€/kWh)",
+          "value": 1.1,
+          "formula": {
+            "L": "145.01543000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16466,
+          "component": "Kosten WKK (c€/kWh)",
+          "value": 0.392,
+          "formula": {
+            "L": "145.01543000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16467,
+          "component": "Tweevoudige meter dagtarief (c€/kWh)",
+          "value": 20.739354981,
+          "formula": {
+            "Z": "0.12670000000000001",
+            "AD": "2.3658999999999999",
+            "L": "145.01543000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16468,
+          "component": "Tweevoudige meter nachttarief (c€/kWh)",
+          "value": 15.404373565000002,
+          "formula": {
+            "Z": "9.5500000000000002E-2",
+            "AD": "1.5553999999999999",
+            "L": "145.01543000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16469,
+          "component": "Uitsluitend nachtmeter (c€/kWh)",
+          "value": 16.576299796,
+          "formula": {
+            "Z": "9.7199999999999995E-2",
+            "AD": "2.4807999999999999",
+            "L": "145.01543000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16470,
+          "component": "Vaste vergoeding (€)",
+          "value": 95.0,
+          "formula": {
+            "L": "145.01543000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        }
+      ],
+      "dayCents": 20.739354981,
+      "nightCents": 15.404373565000002,
+      "doubleFixedAnnual": 95.0
+    },
+    {
+      "id": "846a42aa85fbbc148d42",
+      "supplier": "ENGIE",
+      "product": "Flow PRO",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 19.095540504000002,
+      "greenCents": 1.1,
+      "wkkCents": 0.392,
+      "fixedAnnual": 60.0,
+      "unitCents": 20.587540504000003,
+      "signupUrl": "https://www.engie.be/nl/professionals/elektriciteit-gas",
+      "termsUrl": "https://www.engie.be/nl/professionals/elektriciteit-gas",
+      "sourceSheet": 3,
+      "sourceRows": [
+        {
+          "row": 16477,
+          "component": "Enkelvoudige meter dagtarief (c€/kWh)",
+          "value": 19.095540504000002,
+          "formula": {
+            "Z": "0.1128",
+            "AD": "2.7378",
+            "L": "145.01543000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16478,
+          "component": "Kosten groene stroom (c€/kWh)",
+          "value": 1.1,
+          "formula": {
+            "L": "145.01543000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16479,
+          "component": "Kosten WKK (c€/kWh)",
+          "value": 0.392,
+          "formula": {
+            "L": "145.01543000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16480,
+          "component": "Tweevoudige meter dagtarief (c€/kWh)",
+          "value": 21.184258067000002,
+          "formula": {
+            "Z": "0.12690000000000001",
+            "AD": "2.7818000000000001",
+            "L": "145.01543000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16481,
+          "component": "Tweevoudige meter nachttarief (c€/kWh)",
+          "value": 16.576299796,
+          "formula": {
+            "Z": "9.7199999999999995E-2",
+            "AD": "2.4807999999999999",
+            "L": "145.01543000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16482,
+          "component": "Uitsluitend nachtmeter (c€/kWh)",
+          "value": 16.576299796,
+          "formula": {
+            "Z": "9.7199999999999995E-2",
+            "AD": "2.4807999999999999",
+            "L": "145.01543000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16483,
+          "component": "Vaste vergoeding (€)",
+          "value": 60.0,
+          "formula": {
+            "L": "145.01543000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        }
+      ],
+      "dayCents": 21.184258067000002,
+      "nightCents": 16.576299796,
+      "doubleFixedAnnual": 60.0
+    },
+    {
+      "id": "e37e6fe56dcd67933156",
+      "supplier": "Luminus",
+      "product": "BasicFlex Pro Online",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 16.779924463999997,
+      "greenCents": 1.10302,
+      "wkkCents": 0.36414,
+      "fixedAnnual": 25.0,
+      "unitCents": 18.247084463999997,
+      "signupUrl": "https://www.luminus.be/energy-price-calculator/nl/pro/huidige-klant",
+      "termsUrl": "https://www.luminus.be/nl/pro/",
+      "sourceSheet": 3,
+      "sourceRows": [
+        {
+          "row": 16531,
+          "component": "Enkelvoudige meter dagtarief (c€/kWh)",
+          "value": 16.779924463999997,
+          "formula": {
+            "Z": "0.10432",
+            "AD": "1.0329299999999999",
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16532,
+          "component": "Kosten groene stroom (c€/kWh)",
+          "value": 1.10302,
+          "formula": {
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16533,
+          "component": "Kosten WKK (c€/kWh)",
+          "value": 0.36414,
+          "formula": {
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16534,
+          "component": "Tweevoudige meter dagtarief (c€/kWh)",
+          "value": 19.157768714,
+          "formula": {
+            "Z": "0.11932",
+            "AD": "1.1465399999999999",
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16535,
+          "component": "Tweevoudige meter nachttarief (c€/kWh)",
+          "value": 14.697307063999999,
+          "formula": {
+            "Z": "9.2319999999999999E-2",
+            "AD": "0.76170000000000004",
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16536,
+          "component": "Uitsluitend nachtmeter (c€/kWh)",
+          "value": 14.697307063999999,
+          "formula": {
+            "Z": "9.2319999999999999E-2",
+            "AD": "0.76170000000000004",
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16537,
+          "component": "Vaste vergoeding (€)",
+          "value": 25.0,
+          "formula": {
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        }
+      ],
+      "dayCents": 19.157768714,
+      "nightCents": 14.697307063999999,
+      "doubleFixedAnnual": 25.0
+    },
+    {
+      "id": "9c83237ea24dcd9ad7ae",
+      "supplier": "Luminus",
+      "product": "ComfyFlex Pro",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 19.738448431200002,
+      "greenCents": 1.10302,
+      "wkkCents": 0.36414,
+      "fixedAnnual": 65.0,
+      "unitCents": 21.2056084312,
+      "signupUrl": "https://www.luminus.be/energy-price-calculator/nl/pro/huidige-klant",
+      "termsUrl": "https://www.luminus.be/nl/pro/",
+      "sourceSheet": 3,
+      "sourceRows": [
+        {
+          "row": 16538,
+          "component": "Enkelvoudige meter dagtarief (c€/kWh)",
+          "value": 19.738448431200002,
+          "formula": {
+            "Z": "0.10988000000000001",
+            "AD": "3.8580700000000001",
+            "L": "144.52474000000001",
+            "P": "144.71333000000001",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16539,
+          "component": "Kosten groene stroom (c€/kWh)",
+          "value": 1.10302,
+          "formula": {
+            "L": "144.52474000000001",
+            "P": "144.71333000000001",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16540,
+          "component": "Kosten WKK (c€/kWh)",
+          "value": 0.36414,
+          "formula": {
+            "L": "144.52474000000001",
+            "P": "144.71333000000001",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16541,
+          "component": "Tweevoudige meter dagtarief (c€/kWh)",
+          "value": 21.886899843200002,
+          "formula": {
+            "Z": "0.12368",
+            "AD": "4.0120800000000001",
+            "L": "144.52474000000001",
+            "P": "144.71333000000001",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16542,
+          "component": "Tweevoudige meter nachttarief (c€/kWh)",
+          "value": 17.4852918632,
+          "formula": {
+            "Z": "9.6680000000000002E-2",
+            "AD": "3.5126400000000002",
+            "L": "144.52474000000001",
+            "P": "144.71333000000001",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16543,
+          "component": "Uitsluitend nachtmeter (c€/kWh)",
+          "value": 17.4852918632,
+          "formula": {
+            "Z": "9.6680000000000002E-2",
+            "AD": "3.5126400000000002",
+            "L": "144.52474000000001",
+            "P": "144.71333000000001",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16544,
+          "component": "Vaste vergoeding (€)",
+          "value": 65.0,
+          "formula": {
+            "L": "144.52474000000001",
+            "P": "144.71333000000001",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        }
+      ],
+      "dayCents": 21.886899843200002,
+      "nightCents": 17.4852918632,
+      "doubleFixedAnnual": 65.0
+    },
+    {
+      "id": "fffa44de0dfe1174898b",
+      "supplier": "Luminus",
+      "product": "ComfyFlex Pro+",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 21.358448431200003,
+      "greenCents": 1.10302,
+      "wkkCents": 0.36414,
+      "fixedAnnual": 65.0,
+      "unitCents": 22.825608431200003,
+      "signupUrl": "https://www.luminus.be/energy-price-calculator/nl/pro/huidige-klant",
+      "termsUrl": "https://www.luminus.be/nl/pro/",
+      "sourceSheet": 3,
+      "sourceRows": [
+        {
+          "row": 16545,
+          "component": "Enkelvoudige meter dagtarief (c€/kWh)",
+          "value": 21.358448431200003,
+          "formula": {
+            "Z": "0.10988000000000001",
+            "AD": "5.4780699999999998",
+            "L": "144.52474000000001",
+            "P": "144.71333000000001",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16546,
+          "component": "Kosten groene stroom (c€/kWh)",
+          "value": 1.10302,
+          "formula": {
+            "L": "144.52474000000001",
+            "P": "144.71333000000001",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16547,
+          "component": "Kosten WKK (c€/kWh)",
+          "value": 0.36414,
+          "formula": {
+            "L": "144.52474000000001",
+            "P": "144.71333000000001",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16548,
+          "component": "Tweevoudige meter dagtarief (c€/kWh)",
+          "value": 23.6364998432,
+          "formula": {
+            "Z": "0.12368",
+            "AD": "5.7616800000000001",
+            "L": "144.52474000000001",
+            "P": "144.71333000000001",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16549,
+          "component": "Tweevoudige meter nachttarief (c€/kWh)",
+          "value": 18.943291863200002,
+          "formula": {
+            "Z": "9.6680000000000002E-2",
+            "AD": "4.9706400000000004",
+            "L": "144.52474000000001",
+            "P": "144.71333000000001",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16550,
+          "component": "Uitsluitend nachtmeter (c€/kWh)",
+          "value": 18.943291863200002,
+          "formula": {
+            "Z": "9.6680000000000002E-2",
+            "AD": "4.9706400000000004",
+            "L": "144.52474000000001",
+            "P": "144.71333000000001",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16551,
+          "component": "Vaste vergoeding (€)",
+          "value": 65.0,
+          "formula": {
+            "L": "144.52474000000001",
+            "P": "144.71333000000001",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        }
+      ],
+      "dayCents": 23.6364998432,
+      "nightCents": 18.943291863200002,
+      "doubleFixedAnnual": 65.0
+    },
+    {
+      "id": "b75045df5be53d4a64a0",
+      "supplier": "Luminus",
+      "product": "MaxxFlex Pro",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 19.2874331339,
+      "greenCents": 1.10302,
+      "wkkCents": 0.36414,
+      "fixedAnnual": 65.0,
+      "unitCents": 20.7545931339,
+      "signupUrl": "https://www.luminus.be/energy-price-calculator/nl/pro/huidige-klant",
+      "termsUrl": "https://www.luminus.be/nl/pro/",
+      "sourceSheet": 3,
+      "sourceRows": [
+        {
+          "row": 16556,
+          "component": "Enkelvoudige meter dagtarief (c€/kWh)",
+          "value": 19.2874331339,
+          "formula": {
+            "Z": "0.10972999999999999",
+            "AD": "3.3748900000000002",
+            "L": "145.01543000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16557,
+          "component": "Kosten groene stroom (c€/kWh)",
+          "value": 1.10302,
+          "formula": {
+            "L": "145.01543000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16558,
+          "component": "Kosten WKK (c€/kWh)",
+          "value": 0.36414,
+          "formula": {
+            "L": "145.01543000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16559,
+          "component": "Tweevoudige meter dagtarief (c€/kWh)",
+          "value": 21.4430160679,
+          "formula": {
+            "Z": "0.12353",
+            "AD": "3.5292599999999998",
+            "L": "145.01543000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16560,
+          "component": "Tweevoudige meter nachttarief (c€/kWh)",
+          "value": 17.027599457900003,
+          "formula": {
+            "Z": "9.6530000000000005E-2",
+            "AD": "3.0292599999999998",
+            "L": "145.01543000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16561,
+          "component": "Uitsluitend nachtmeter (c€/kWh)",
+          "value": 17.027599457900003,
+          "formula": {
+            "Z": "9.6530000000000005E-2",
+            "AD": "3.0292599999999998",
+            "L": "145.01543000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16562,
+          "component": "Vaste vergoeding (€)",
+          "value": 65.0,
+          "formula": {
+            "L": "145.01543000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        }
+      ],
+      "dayCents": 21.4430160679,
+      "nightCents": 17.027599457900003,
+      "doubleFixedAnnual": 65.0
+    },
+    {
+      "id": "20b122fafadc70c5b52b",
+      "supplier": "TotalEnergies",
+      "product": "proComfort Variabel",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 18.688910025,
+      "greenCents": 1.067,
+      "wkkCents": 0.315,
+      "fixedAnnual": 90.0,
+      "unitCents": 20.070910025,
+      "signupUrl": "https://totalenergies.be/nl/professioneel/producten-en-diensten/my-business/ons-energieaanbod/bereken-jouw-prijs/aantal-locatie",
+      "termsUrl": "https://totalenergies.be/nl/professioneel/elektriciteit-en-gas",
+      "sourceSheet": 3,
+      "sourceRows": [
+        {
+          "row": 16711,
+          "component": "Enkelvoudige meter dagtarief (c€/kWh)",
+          "value": 18.688910025,
+          "formula": {
+            "Z": "0.1095",
+            "AD": "2.16",
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16712,
+          "component": "Kosten groene stroom (c€/kWh)",
+          "value": 1.067,
+          "formula": {
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16713,
+          "component": "Kosten WKK (c€/kWh)",
+          "value": 0.315,
+          "formula": {
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16714,
+          "component": "Tweevoudige meter dagtarief (c€/kWh)",
+          "value": 20.45501274,
+          "formula": {
+            "Z": "0.1212",
+            "AD": "2.16",
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16715,
+          "component": "Tweevoudige meter nachttarief (c€/kWh)",
+          "value": 17.028471575,
+          "formula": {
+            "Z": "9.8500000000000004E-2",
+            "AD": "2.16",
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16716,
+          "component": "Uitsluitend nachtmeter (c€/kWh)",
+          "value": 17.66812143,
+          "formula": {
+            "Z": "0.10340000000000001",
+            "AD": "2.06",
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16717,
+          "component": "Vaste vergoeding (€)",
+          "value": 90.0,
+          "formula": {
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        }
+      ],
+      "dayCents": 20.45501274,
+      "nightCents": 17.028471575,
+      "doubleFixedAnnual": 90.0
+    },
+    {
+      "id": "5597b1b772708f71a24e",
+      "supplier": "TotalEnergies",
+      "product": "proEssential Variabel",
+      "energy": "electricity",
+      "type": "variable",
+      "singleCents": 18.209099815,
+      "greenCents": 1.067,
+      "wkkCents": 0.315,
+      "fixedAnnual": 35.0,
+      "unitCents": 19.591099815,
+      "signupUrl": "https://totalenergies.be/nl/professioneel/producten-en-diensten/my-business/ons-energieaanbod/bereken-jouw-prijs/aantal-locatie",
+      "termsUrl": "https://totalenergies.be/nl/professioneel/elektriciteit-en-gas",
+      "sourceSheet": 3,
+      "sourceRows": [
+        {
+          "row": 16725,
+          "component": "Enkelvoudige meter dagtarief (c€/kWh)",
+          "value": 18.209099815,
+          "formula": {
+            "Z": "0.10970000000000001",
+            "AD": "1.65",
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16726,
+          "component": "Kosten groene stroom (c€/kWh)",
+          "value": 1.067,
+          "formula": {
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16727,
+          "component": "Kosten WKK (c€/kWh)",
+          "value": 0.315,
+          "formula": {
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16728,
+          "component": "Tweevoudige meter dagtarief (c€/kWh)",
+          "value": 19.914822949999998,
+          "formula": {
+            "Z": "0.121",
+            "AD": "1.65",
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16729,
+          "component": "Tweevoudige meter nachttarief (c€/kWh)",
+          "value": 16.578851155,
+          "formula": {
+            "Z": "9.8900000000000002E-2",
+            "AD": "1.65",
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16730,
+          "component": "Uitsluitend nachtmeter (c€/kWh)",
+          "value": 17.29888059,
+          "formula": {
+            "Z": "0.1042",
+            "AD": "1.57",
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16731,
+          "component": "Vaste vergoeding (€)",
+          "value": 35.0,
+          "formula": {
+            "L": "150.94895",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        }
+      ],
+      "dayCents": 19.914822949999998,
+      "nightCents": 16.578851155,
+      "doubleFixedAnnual": 35.0
+    },
+    {
+      "id": "9a344361869d29bb04fb",
+      "supplier": "Ecofix",
+      "product": "Flexy Online Pro",
+      "energy": "gas",
+      "type": "variable",
+      "singleCents": 7.19772236,
+      "greenCents": 0,
+      "wkkCents": 0,
+      "fixedAnnual": 10.0,
+      "unitCents": 7.19772236,
+      "signupUrl": "https://portal.ecofixgp.be/contract-type/flexyonl",
+      "termsUrl": "https://www.ecofixgp.be/tarieven/tariefkaarten",
+      "sourceSheet": 3,
+      "sourceRows": [
+        {
+          "row": 17073,
+          "component": "Enkelvoudige meter dagtarief (c€/kWh)",
+          "value": 7.19772236,
+          "formula": {
+            "Z": "0.10100000000000001",
+            "AD": "0.22",
+            "L": "69.086359999999999",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 17074,
+          "component": "Vaste vergoeding (€)",
+          "value": 10.0,
+          "formula": {
+            "L": "69.086359999999999",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "3b7178a0c8c90f5ff118",
+      "supplier": "Ecofix",
+      "product": "Flexy Pro",
+      "energy": "gas",
+      "type": "variable",
+      "singleCents": 7.497722360000001,
+      "greenCents": 0,
+      "wkkCents": 0,
+      "fixedAnnual": 60.0,
+      "unitCents": 7.497722360000001,
+      "signupUrl": "https://portal.ecofixgp.be/contract-type/flexy",
+      "termsUrl": "https://www.ecofixgp.be/tarieven/tariefkaarten",
+      "sourceSheet": 3,
+      "sourceRows": [
+        {
+          "row": 17075,
+          "component": "Enkelvoudige meter dagtarief (c€/kWh)",
+          "value": 7.497722360000001,
+          "formula": {
+            "Z": "0.10100000000000001",
+            "AD": "0.52",
+            "L": "69.086359999999999",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 17076,
+          "component": "Vaste vergoeding (€)",
+          "value": 60.0,
+          "formula": {
+            "L": "69.086359999999999",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "6c3508a6efc0854554c0",
+      "supplier": "Eneco",
+      "product": "Eneco Aardgas Flex",
+      "energy": "gas",
+      "type": "variable",
+      "singleCents": 7.892636,
+      "greenCents": 0,
+      "wkkCents": 0,
+      "fixedAnnual": 95.0,
+      "unitCents": 7.892636,
+      "signupUrl": "https://eneco.be/nl/simulatie/",
+      "termsUrl": "https://eneco.be/nl/kmo/elektriciteit-gas/tariefkaarten/",
+      "sourceSheet": 3,
+      "sourceRows": [
+        {
+          "row": 17081,
+          "component": "Enkelvoudige meter dagtarief (c€/kWh)",
+          "value": 7.892636,
+          "formula": {
+            "Z": "0.1",
+            "AA": "0",
+            "AB": "0",
+            "AD": "0.98399999999999999",
+            "L": "69.086359999999999",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 17082,
+          "component": "Vaste vergoeding (€)",
+          "value": 95.0,
+          "formula": {
+            "L": "69.086359999999999",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "657800a262873f3fb14f",
+      "supplier": "Eneco",
+      "product": "Eneco Aardgas Flex One",
+      "energy": "gas",
+      "type": "variable",
+      "singleCents": 7.370636,
+      "greenCents": 0,
+      "wkkCents": 0,
+      "fixedAnnual": 95.0,
+      "unitCents": 7.370636,
+      "signupUrl": "https://eneco.be/nl/simulatie/",
+      "termsUrl": "https://eneco.be/nl/kmo/elektriciteit-gas/tariefkaarten/",
+      "sourceSheet": 3,
+      "sourceRows": [
+        {
+          "row": 17083,
+          "component": "Enkelvoudige meter dagtarief (c€/kWh)",
+          "value": 7.370636,
+          "formula": {
+            "Z": "0.1",
+            "AA": "0",
+            "AB": "0",
+            "AD": "0.46200000000000002",
+            "L": "69.086359999999999",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 17084,
+          "component": "Vaste vergoeding (€)",
+          "value": 95.0,
+          "formula": {
+            "L": "69.086359999999999",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "6e9f0bcd9f3453730b90",
+      "supplier": "Energie.be",
+      "product": "Gas professioneel online",
+      "energy": "gas",
+      "type": "variable",
+      "singleCents": 7.4813519,
+      "greenCents": 0,
+      "wkkCents": 0,
+      "fixedAnnual": 60.0,
+      "unitCents": 7.4813519,
+      "signupUrl": "https://www.energie.be/nl/bereken-je-prijs",
+      "termsUrl": "https://www.energie.be/",
+      "sourceSheet": 3,
+      "sourceRows": [
+        {
+          "row": 17085,
+          "component": "Enkelvoudige meter dagtarief (c€/kWh)",
+          "value": 7.4813519,
+          "formula": {
+            "Z": "0.10249999999999999",
+            "AD": "0.4",
+            "L": "69.086359999999999",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 17086,
+          "component": "Vaste vergoeding (€)",
+          "value": 60.0,
+          "formula": {
+            "L": "69.086359999999999",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "e729a8ea2bafa22e71f8",
+      "supplier": "ENGIE",
+      "product": "Direct Online Pro",
+      "energy": "gas",
+      "type": "variable",
+      "singleCents": 7.697618039999998,
+      "greenCents": 0,
+      "wkkCents": 0,
+      "fixedAnnual": 30.0,
+      "unitCents": 7.697618039999998,
+      "signupUrl": "https://www.engie.be/nl/professionals/elektriciteit-gas",
+      "termsUrl": "https://www.engie.be/nl/professionals/elektriciteit-gas",
+      "sourceSheet": 3,
+      "sourceRows": [
+        {
+          "row": 17087,
+          "component": "Enkelvoudige meter dagtarief (c€/kWh)",
+          "value": 7.697618039999998,
+          "formula": {
+            "Z": "0.10199999999999999",
+            "AD": "0.64349999999999996",
+            "L": "69.158019999999993",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 17088,
+          "component": "Vaste vergoeding (€)",
+          "value": 30.0,
+          "formula": {
+            "L": "69.158019999999993",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "4509f5a672068dd15828",
+      "supplier": "ENGIE",
+      "product": "Easy pro",
+      "energy": "gas",
+      "type": "variable",
+      "singleCents": 8.617902039999999,
+      "greenCents": 0,
+      "wkkCents": 0,
+      "fixedAnnual": 55.0,
+      "unitCents": 8.617902039999999,
+      "signupUrl": "https://www.engie.be/nl/professionals/elektriciteit-gas",
+      "termsUrl": "https://www.engie.be/nl/professionals/elektriciteit-gas",
+      "sourceSheet": 3,
+      "sourceRows": [
+        {
+          "row": 17089,
+          "component": "Enkelvoudige meter dagtarief (c€/kWh)",
+          "value": 8.617902039999999,
+          "formula": {
+            "Z": "0.10199999999999999",
+            "AD": "1.5595000000000001",
+            "L": "69.200019999999995",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 17090,
+          "component": "Vaste vergoeding (€)",
+          "value": 55.0,
+          "formula": {
+            "L": "69.200019999999995",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "73ced69dc1b06f5a886b",
+      "supplier": "ENGIE",
+      "product": "Empower Pro",
+      "energy": "gas",
+      "type": "variable",
+      "singleCents": 8.030618039999998,
+      "greenCents": 0,
+      "wkkCents": 0,
+      "fixedAnnual": 52.0,
+      "unitCents": 8.030618039999998,
+      "signupUrl": "https://www.engie.be/nl/professionals/elektriciteit-gas",
+      "termsUrl": "https://www.engie.be/nl/professionals/elektriciteit-gas",
+      "sourceSheet": 3,
+      "sourceRows": [
+        {
+          "row": 17091,
+          "component": "Enkelvoudige meter dagtarief (c€/kWh)",
+          "value": 8.030618039999998,
+          "formula": {
+            "Z": "0.10199999999999999",
+            "AD": "0.97650000000000003",
+            "L": "69.158019999999993",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 17092,
+          "component": "Vaste vergoeding (€)",
+          "value": 52.0,
+          "formula": {
+            "L": "69.158019999999993",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bb5f21f9e714287331a0",
+      "supplier": "ENGIE",
+      "product": "Flow gas PRO",
+      "energy": "gas",
+      "type": "variable",
+      "singleCents": 8.030618039999998,
+      "greenCents": 0,
+      "wkkCents": 0,
+      "fixedAnnual": 52.0,
+      "unitCents": 8.030618039999998,
+      "signupUrl": "https://www.engie.be/nl/professionals/elektriciteit-gas",
+      "termsUrl": "https://www.engie.be/nl/professionals/elektriciteit-gas",
+      "sourceSheet": 3,
+      "sourceRows": [
+        {
+          "row": 17093,
+          "component": "Enkelvoudige meter dagtarief (c€/kWh)",
+          "value": 8.030618039999998,
+          "formula": {
+            "Z": "0.10199999999999999",
+            "AD": "0.97650000000000003",
+            "L": "69.158019999999993",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 17094,
+          "component": "Vaste vergoeding (€)",
+          "value": 52.0,
+          "formula": {
+            "L": "69.158019999999993",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "be2b4bd50f2126f032d2",
+      "supplier": "Luminus",
+      "product": "BasicFlex Pro Online",
+      "energy": "gas",
+      "type": "variable",
+      "singleCents": 7.5961354996,
+      "greenCents": 0,
+      "wkkCents": 0,
+      "fixedAnnual": 20.0,
+      "unitCents": 7.5961354996,
+      "signupUrl": "https://www.luminus.be/energy-price-calculator/nl/pro/huidige-klant",
+      "termsUrl": "https://www.luminus.be/nl/pro/",
+      "sourceSheet": 3,
+      "sourceRows": [
+        {
+          "row": 17105,
+          "component": "Enkelvoudige meter dagtarief (c€/kWh)",
+          "value": 7.5961354996,
+          "formula": {
+            "Z": "0.10011",
+            "AD": "0.67989999999999995",
+            "L": "69.086359999999999",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 17106,
+          "component": "Vaste vergoeding (€)",
+          "value": 20.0,
+          "formula": {
+            "L": "69.086359999999999",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "c71bcfd9c387f06fed39",
+      "supplier": "Luminus",
+      "product": "ComfyFlex Pro",
+      "energy": "gas",
+      "type": "variable",
+      "singleCents": 8.6165540714,
+      "greenCents": 0,
+      "wkkCents": 0,
+      "fixedAnnual": 50.0,
+      "unitCents": 8.6165540714,
+      "signupUrl": "https://www.luminus.be/energy-price-calculator/nl/pro/huidige-klant",
+      "termsUrl": "https://www.luminus.be/nl/pro/",
+      "sourceSheet": 3,
+      "sourceRows": [
+        {
+          "row": 17107,
+          "component": "Enkelvoudige meter dagtarief (c€/kWh)",
+          "value": 8.6165540714,
+          "formula": {
+            "Z": "0.10042",
+            "AD": "1.70262",
+            "L": "68.850170000000006",
+            "P": "69.631460000000004",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 17108,
+          "component": "Vaste vergoeding (€)",
+          "value": 50.0,
+          "formula": {
+            "L": "68.850170000000006",
+            "P": "69.631460000000004",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2d8dba30aec1989242a9",
+      "supplier": "Luminus",
+      "product": "ComfyFlex Pro+",
+      "energy": "gas",
+      "type": "variable",
+      "singleCents": 8.9915540714,
+      "greenCents": 0,
+      "wkkCents": 0,
+      "fixedAnnual": 50.0,
+      "unitCents": 8.9915540714,
+      "signupUrl": "https://www.luminus.be/energy-price-calculator/nl/pro/huidige-klant",
+      "termsUrl": "https://www.luminus.be/nl/pro/",
+      "sourceSheet": 3,
+      "sourceRows": [
+        {
+          "row": 17109,
+          "component": "Enkelvoudige meter dagtarief (c€/kWh)",
+          "value": 8.9915540714,
+          "formula": {
+            "Z": "0.10042",
+            "AD": "2.07762",
+            "L": "68.850170000000006",
+            "P": "69.631460000000004",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 17110,
+          "component": "Vaste vergoeding (€)",
+          "value": 50.0,
+          "formula": {
+            "L": "68.850170000000006",
+            "P": "69.631460000000004",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9ec918b7d822ffc3093e",
+      "supplier": "Luminus",
+      "product": "MaxxFlex Pro",
+      "energy": "gas",
+      "type": "variable",
+      "singleCents": 7.9574936956,
+      "greenCents": 0,
+      "wkkCents": 0,
+      "fixedAnnual": 50.0,
+      "unitCents": 7.9574936956,
+      "signupUrl": "https://www.luminus.be/energy-price-calculator/nl/pro/huidige-klant",
+      "termsUrl": "https://www.luminus.be/nl/pro/",
+      "sourceSheet": 3,
+      "sourceRows": [
+        {
+          "row": 17111,
+          "component": "Enkelvoudige meter dagtarief (c€/kWh)",
+          "value": 7.9574936956,
+          "formula": {
+            "Z": "0.10011",
+            "AD": "1.0428999999999999",
+            "L": "69.069959999999995",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 17112,
+          "component": "Vaste vergoeding (€)",
+          "value": 50.0,
+          "formula": {
+            "L": "69.069959999999995",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b753f743ec85f1aec0eb",
+      "supplier": "TotalEnergies",
+      "product": "proComfort Variabel",
+      "energy": "gas",
+      "type": "variable",
+      "singleCents": 7.586996451999999,
+      "greenCents": 0,
+      "wkkCents": 0,
+      "fixedAnnual": 90.0,
+      "unitCents": 7.586996451999999,
+      "signupUrl": "https://totalenergies.be/nl/professioneel/producten-en-diensten/my-business/ons-energieaanbod/bereken-jouw-prijs/aantal-locatie",
+      "termsUrl": "https://totalenergies.be/nl/professioneel/elektriciteit-en-gas",
+      "sourceSheet": 3,
+      "sourceRows": [
+        {
+          "row": 17141,
+          "component": "Enkelvoudige meter dagtarief (c€/kWh)",
+          "value": 7.586996451999999,
+          "formula": {
+            "Z": "0.1007",
+            "AD": "0.63",
+            "L": "69.086359999999999",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 17142,
+          "component": "Vaste vergoeding (€)",
+          "value": 90.0,
+          "formula": {
+            "L": "69.086359999999999",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "1de92bf4aae1d2e5399e",
+      "supplier": "TotalEnergies",
+      "product": "proEssential Variabel",
+      "energy": "gas",
+      "type": "variable",
+      "singleCents": 7.600813724,
+      "greenCents": 0,
+      "wkkCents": 0,
+      "fixedAnnual": 35.0,
+      "unitCents": 7.600813724,
+      "signupUrl": "https://totalenergies.be/nl/professioneel/producten-en-diensten/my-business/ons-energieaanbod/bereken-jouw-prijs/aantal-locatie",
+      "termsUrl": "https://totalenergies.be/nl/professioneel/elektriciteit-en-gas",
+      "sourceSheet": 3,
+      "sourceRows": [
+        {
+          "row": 17143,
+          "component": "Enkelvoudige meter dagtarief (c€/kWh)",
+          "value": 7.600813724,
+          "formula": {
+            "Z": "0.1009",
+            "AD": "0.63",
+            "L": "69.086359999999999",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 17144,
+          "component": "Vaste vergoeding (€)",
+          "value": 35.0,
+          "formula": {
+            "L": "69.086359999999999",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "3f21854684b9f4fc0314",
+      "supplier": "Eneco",
+      "product": "Eneco Zon & Wind Fix One",
+      "energy": "electricity",
+      "type": "fixed",
+      "singleCents": 19.418,
+      "greenCents": 1.093,
+      "wkkCents": 0.336,
+      "fixedAnnual": 95.0,
+      "unitCents": 20.846999999999998,
+      "signupUrl": "https://eneco.be/nl/simulatie/",
+      "termsUrl": "https://eneco.be/nl/kmo/elektriciteit-gas/tariefkaarten/",
+      "sourceSheet": 5,
+      "sourceRows": [
+        {
+          "row": 4517,
+          "component": "Enkelvoudige meter dagtarief (c€/kWh)",
+          "value": 19.418,
+          "formula": {}
+        },
+        {
+          "row": 4518,
+          "component": "Kosten groene stroom (c€/kWh)",
+          "value": 1.093,
+          "formula": {}
+        },
+        {
+          "row": 4519,
+          "component": "Kosten WKK (c€/kWh)",
+          "value": 0.336,
+          "formula": {}
+        },
+        {
+          "row": 4520,
+          "component": "Tweevoudige meter dagtarief (c€/kWh)",
+          "value": 22.249,
+          "formula": {}
+        },
+        {
+          "row": 4521,
+          "component": "Tweevoudige meter nachttarief (c€/kWh)",
+          "value": 16.953,
+          "formula": {}
+        },
+        {
+          "row": 4522,
+          "component": "Uitsluitend nachtmeter (c€/kWh)",
+          "value": 16.953,
+          "formula": {}
+        },
+        {
+          "row": 4523,
+          "component": "Vaste vergoeding (€)",
+          "value": 95.0,
+          "formula": {}
+        }
+      ],
+      "dayCents": 22.249,
+      "nightCents": 16.953,
+      "doubleFixedAnnual": 95.0
+    },
+    {
+      "id": "1189f04127c2b5b7a4f2",
+      "supplier": "Eneco",
+      "product": "Eneco Zon & Wind Vast",
+      "energy": "electricity",
+      "type": "fixed",
+      "singleCents": 19.908,
+      "greenCents": 1.093,
+      "wkkCents": 0.336,
+      "fixedAnnual": 95.0,
+      "unitCents": 21.337,
+      "signupUrl": "https://eneco.be/nl/simulatie/",
+      "termsUrl": "https://eneco.be/nl/kmo/elektriciteit-gas/tariefkaarten/",
+      "sourceSheet": 5,
+      "sourceRows": [
+        {
+          "row": 4524,
+          "component": "Enkelvoudige meter dagtarief (c€/kWh)",
+          "value": 19.908,
+          "formula": {}
+        },
+        {
+          "row": 4525,
+          "component": "Kosten groene stroom (c€/kWh)",
+          "value": 1.093,
+          "formula": {}
+        },
+        {
+          "row": 4526,
+          "component": "Kosten WKK (c€/kWh)",
+          "value": 0.336,
+          "formula": {}
+        },
+        {
+          "row": 4527,
+          "component": "Tweevoudige meter dagtarief (c€/kWh)",
+          "value": 22.739,
+          "formula": {}
+        },
+        {
+          "row": 4528,
+          "component": "Tweevoudige meter nachttarief (c€/kWh)",
+          "value": 17.443,
+          "formula": {}
+        },
+        {
+          "row": 4529,
+          "component": "Uitsluitend nachtmeter (c€/kWh)",
+          "value": 17.443,
+          "formula": {}
+        },
+        {
+          "row": 4530,
+          "component": "Vaste vergoeding (€)",
+          "value": 95.0,
+          "formula": {}
+        }
+      ],
+      "dayCents": 22.739,
+      "nightCents": 17.443,
+      "doubleFixedAnnual": 95.0
+    },
+    {
+      "id": "334b4e87330ddf3a9819",
+      "supplier": "Energie.be",
+      "product": "Elektriciteit vast professioneel online",
+      "energy": "electricity",
+      "type": "fixed",
+      "singleCents": 20.327,
+      "greenCents": 1.103,
+      "wkkCents": 0.364,
+      "fixedAnnual": 60.0,
+      "unitCents": 21.794000000000004,
+      "signupUrl": "https://www.energie.be/nl/bereken-je-prijs",
+      "termsUrl": "https://www.energie.be/",
+      "sourceSheet": 5,
+      "sourceRows": [
+        {
+          "row": 4531,
+          "component": "Enkelvoudige meter dagtarief (c€/kWh)",
+          "value": 20.327,
+          "formula": {}
+        },
+        {
+          "row": 4532,
+          "component": "Kosten groene stroom (c€/kWh)",
+          "value": 1.103,
+          "formula": {}
+        },
+        {
+          "row": 4533,
+          "component": "Kosten WKK (c€/kWh)",
+          "value": 0.364,
+          "formula": {}
+        },
+        {
+          "row": 4534,
+          "component": "Tweevoudige meter dagtarief (c€/kWh)",
+          "value": 20.327,
+          "formula": {}
+        },
+        {
+          "row": 4535,
+          "component": "Tweevoudige meter nachttarief (c€/kWh)",
+          "value": 20.327,
+          "formula": {}
+        },
+        {
+          "row": 4536,
+          "component": "Uitsluitend nachtmeter (c€/kWh)",
+          "value": 20.327,
+          "formula": {}
+        },
+        {
+          "row": 4537,
+          "component": "Vaste vergoeding (€)",
+          "value": 60.0,
+          "formula": {}
+        }
+      ],
+      "dayCents": 20.327,
+      "nightCents": 20.327,
+      "doubleFixedAnnual": 60.0
+    },
+    {
+      "id": "4f98588c1a3db97838f7",
+      "supplier": "ENGIE",
+      "product": "Easy pro",
+      "energy": "electricity",
+      "type": "fixed",
+      "singleCents": 20.975,
+      "greenCents": 1.1,
+      "wkkCents": 0.392,
+      "fixedAnnual": 65.0,
+      "unitCents": 22.467000000000002,
+      "signupUrl": "https://www.engie.be/nl/professionals/elektriciteit-gas",
+      "termsUrl": "https://www.engie.be/nl/professionals/elektriciteit-gas",
+      "sourceSheet": 5,
+      "sourceRows": [
+        {
+          "row": 4538,
+          "component": "Enkelvoudige meter dagtarief (c€/kWh)",
+          "value": 20.975,
+          "formula": {}
+        },
+        {
+          "row": 4539,
+          "component": "Kosten groene stroom (c€/kWh)",
+          "value": 1.1,
+          "formula": {}
+        },
+        {
+          "row": 4540,
+          "component": "Kosten WKK (c€/kWh)",
+          "value": 0.392,
+          "formula": {}
+        },
+        {
+          "row": 4541,
+          "component": "Tweevoudige meter dagtarief (c€/kWh)",
+          "value": 22.997,
+          "formula": {}
+        },
+        {
+          "row": 4542,
+          "component": "Tweevoudige meter nachttarief (c€/kWh)",
+          "value": 18.603,
+          "formula": {}
+        },
+        {
+          "row": 4543,
+          "component": "Uitsluitend nachtmeter (c€/kWh)",
+          "value": 18.603,
+          "formula": {}
+        },
+        {
+          "row": 4544,
+          "component": "Vaste vergoeding (€)",
+          "value": 65.0,
+          "formula": {}
+        }
+      ],
+      "dayCents": 22.997,
+      "nightCents": 18.603,
+      "doubleFixedAnnual": 65.0
+    },
+    {
+      "id": "7c4421c0cf3fbbf655b3",
+      "supplier": "ENGIE",
+      "product": "Empower Pro",
+      "energy": "electricity",
+      "type": "fixed",
+      "singleCents": 19.839,
+      "greenCents": 1.1,
+      "wkkCents": 0.392,
+      "fixedAnnual": 95.0,
+      "unitCents": 21.331,
+      "signupUrl": "https://www.engie.be/nl/professionals/elektriciteit-gas",
+      "termsUrl": "https://www.engie.be/nl/professionals/elektriciteit-gas",
+      "sourceSheet": 5,
+      "sourceRows": [
+        {
+          "row": 4545,
+          "component": "Enkelvoudige meter dagtarief (c€/kWh)",
+          "value": 19.839,
+          "formula": {}
+        },
+        {
+          "row": 4546,
+          "component": "Kosten groene stroom (c€/kWh)",
+          "value": 1.1,
+          "formula": {}
+        },
+        {
+          "row": 4547,
+          "component": "Kosten WKK (c€/kWh)",
+          "value": 0.392,
+          "formula": {}
+        },
+        {
+          "row": 4548,
+          "component": "Tweevoudige meter dagtarief (c€/kWh)",
+          "value": 22.005,
+          "formula": {}
+        },
+        {
+          "row": 4549,
+          "component": "Tweevoudige meter nachttarief (c€/kWh)",
+          "value": 16.912,
+          "formula": {}
+        },
+        {
+          "row": 4550,
+          "component": "Uitsluitend nachtmeter (c€/kWh)",
+          "value": 18.603,
+          "formula": {}
+        },
+        {
+          "row": 4551,
+          "component": "Vaste vergoeding (€)",
+          "value": 95.0,
+          "formula": {}
+        }
+      ],
+      "dayCents": 22.005,
+      "nightCents": 16.912,
+      "doubleFixedAnnual": 95.0
+    },
+    {
+      "id": "3768b3ce55bb03eb25f9",
+      "supplier": "Luminus",
+      "product": "BasicFix Pro Online",
+      "energy": "electricity",
+      "type": "fixed",
+      "singleCents": 18.77941,
+      "greenCents": 1.10302,
+      "wkkCents": 0.36414,
+      "fixedAnnual": 25.0,
+      "unitCents": 20.24657,
+      "signupUrl": "https://www.luminus.be/energy-price-calculator/nl/pro/huidige-klant",
+      "termsUrl": "https://www.luminus.be/nl/pro/",
+      "sourceSheet": 5,
+      "sourceRows": [
+        {
+          "row": 4552,
+          "component": "Enkelvoudige meter dagtarief (c€/kWh)",
+          "value": 18.77941,
+          "formula": {}
+        },
+        {
+          "row": 4553,
+          "component": "Kosten groene stroom (c€/kWh)",
+          "value": 1.10302,
+          "formula": {}
+        },
+        {
+          "row": 4554,
+          "component": "Kosten WKK (c€/kWh)",
+          "value": 0.36414,
+          "formula": {}
+        },
+        {
+          "row": 4555,
+          "component": "Tweevoudige meter dagtarief (c€/kWh)",
+          "value": 21.05374,
+          "formula": {}
+        },
+        {
+          "row": 4556,
+          "component": "Tweevoudige meter nachttarief (c€/kWh)",
+          "value": 16.5261,
+          "formula": {}
+        },
+        {
+          "row": 4557,
+          "component": "Uitsluitend nachtmeter (c€/kWh)",
+          "value": 16.5261,
+          "formula": {}
+        },
+        {
+          "row": 4558,
+          "component": "Vaste vergoeding (€)",
+          "value": 25.0,
+          "formula": {}
+        }
+      ],
+      "dayCents": 21.05374,
+      "nightCents": 16.5261,
+      "doubleFixedAnnual": 25.0
+    },
+    {
+      "id": "779c4bd4215aa4999a72",
+      "supplier": "Luminus",
+      "product": "Comfy Pro",
+      "energy": "electricity",
+      "type": "fixed",
+      "singleCents": 21.17524,
+      "greenCents": 1.10302,
+      "wkkCents": 0.36414,
+      "fixedAnnual": 65.0,
+      "unitCents": 22.6424,
+      "signupUrl": "https://www.luminus.be/energy-price-calculator/nl/pro/huidige-klant",
+      "termsUrl": "https://www.luminus.be/nl/pro/",
+      "sourceSheet": 5,
+      "sourceRows": [
+        {
+          "row": 4559,
+          "component": "Enkelvoudige meter dagtarief (c€/kWh)",
+          "value": 21.17524,
+          "formula": {}
+        },
+        {
+          "row": 4560,
+          "component": "Kosten groene stroom (c€/kWh)",
+          "value": 1.10302,
+          "formula": {}
+        },
+        {
+          "row": 4561,
+          "component": "Kosten WKK (c€/kWh)",
+          "value": 0.36414,
+          "formula": {}
+        },
+        {
+          "row": 4562,
+          "component": "Tweevoudige meter dagtarief (c€/kWh)",
+          "value": 23.38181,
+          "formula": {}
+        },
+        {
+          "row": 4563,
+          "component": "Tweevoudige meter nachttarief (c€/kWh)",
+          "value": 18.94226,
+          "formula": {}
+        },
+        {
+          "row": 4564,
+          "component": "Uitsluitend nachtmeter (c€/kWh)",
+          "value": 18.94226,
+          "formula": {}
+        },
+        {
+          "row": 4565,
+          "component": "Vaste vergoeding (€)",
+          "value": 65.0,
+          "formula": {}
+        }
+      ],
+      "dayCents": 23.38181,
+      "nightCents": 18.94226,
+      "doubleFixedAnnual": 65.0
+    },
+    {
+      "id": "ce54b699565c6ff79168",
+      "supplier": "Luminus",
+      "product": "Comfy Pro+",
+      "energy": "electricity",
+      "type": "fixed",
+      "singleCents": 22.79124,
+      "greenCents": 1.10302,
+      "wkkCents": 0.36414,
+      "fixedAnnual": 65.0,
+      "unitCents": 24.258399999999998,
+      "signupUrl": "https://www.luminus.be/energy-price-calculator/nl/pro/huidige-klant",
+      "termsUrl": "https://www.luminus.be/nl/pro/",
+      "sourceSheet": 5,
+      "sourceRows": [
+        {
+          "row": 4566,
+          "component": "Enkelvoudige meter dagtarief (c€/kWh)",
+          "value": 22.79124,
+          "formula": {}
+        },
+        {
+          "row": 4567,
+          "component": "Kosten groene stroom (c€/kWh)",
+          "value": 1.10302,
+          "formula": {}
+        },
+        {
+          "row": 4568,
+          "component": "Kosten WKK (c€/kWh)",
+          "value": 0.36414,
+          "formula": {}
+        },
+        {
+          "row": 4569,
+          "component": "Tweevoudige meter dagtarief (c€/kWh)",
+          "value": 25.12709,
+          "formula": {}
+        },
+        {
+          "row": 4570,
+          "component": "Tweevoudige meter nachttarief (c€/kWh)",
+          "value": 20.39666,
+          "formula": {}
+        },
+        {
+          "row": 4571,
+          "component": "Uitsluitend nachtmeter (c€/kWh)",
+          "value": 20.39666,
+          "formula": {}
+        },
+        {
+          "row": 4572,
+          "component": "Vaste vergoeding (€)",
+          "value": 65.0,
+          "formula": {}
+        }
+      ],
+      "dayCents": 25.12709,
+      "nightCents": 20.39666,
+      "doubleFixedAnnual": 65.0
+    },
+    {
+      "id": "c2efc2c6a0b45a50fa61",
+      "supplier": "Luminus",
+      "product": "MaxxFix Pro",
+      "energy": "electricity",
+      "type": "fixed",
+      "singleCents": 20.17931,
+      "greenCents": 1.10302,
+      "wkkCents": 0.36414,
+      "fixedAnnual": 65.0,
+      "unitCents": 21.64647,
+      "signupUrl": "https://www.luminus.be/energy-price-calculator/nl/pro/huidige-klant",
+      "termsUrl": "https://www.luminus.be/nl/pro/",
+      "sourceSheet": 5,
+      "sourceRows": [
+        {
+          "row": 4573,
+          "component": "Enkelvoudige meter dagtarief (c€/kWh)",
+          "value": 20.17931,
+          "formula": {}
+        },
+        {
+          "row": 4574,
+          "component": "Kosten groene stroom (c€/kWh)",
+          "value": 1.10302,
+          "formula": {}
+        },
+        {
+          "row": 4575,
+          "component": "Kosten WKK (c€/kWh)",
+          "value": 0.36414,
+          "formula": {}
+        },
+        {
+          "row": 4576,
+          "component": "Tweevoudige meter dagtarief (c€/kWh)",
+          "value": 22.38371,
+          "formula": {}
+        },
+        {
+          "row": 4577,
+          "component": "Tweevoudige meter nachttarief (c€/kWh)",
+          "value": 17.93356,
+          "formula": {}
+        },
+        {
+          "row": 4578,
+          "component": "Uitsluitend nachtmeter (c€/kWh)",
+          "value": 17.93356,
+          "formula": {}
+        },
+        {
+          "row": 4579,
+          "component": "Vaste vergoeding (€)",
+          "value": 65.0,
+          "formula": {}
+        }
+      ],
+      "dayCents": 22.38371,
+      "nightCents": 17.93356,
+      "doubleFixedAnnual": 65.0
+    },
+    {
+      "id": "cceb5d9235ab05b25201",
+      "supplier": "TotalEnergies",
+      "product": "proComfort Vast",
+      "energy": "electricity",
+      "type": "fixed",
+      "singleCents": 19.73784,
+      "greenCents": 1.067,
+      "wkkCents": 0.315,
+      "fixedAnnual": 90.0,
+      "unitCents": 21.11984,
+      "signupUrl": "https://totalenergies.be/nl/professioneel/producten-en-diensten/my-business/ons-energieaanbod/bereken-jouw-prijs/aantal-locatie",
+      "termsUrl": "https://totalenergies.be/nl/professioneel/elektriciteit-en-gas",
+      "sourceSheet": 5,
+      "sourceRows": [
+        {
+          "row": 4629,
+          "component": "Enkelvoudige meter dagtarief (c€/kWh)",
+          "value": 19.73784,
+          "formula": {}
+        },
+        {
+          "row": 4630,
+          "component": "Kosten groene stroom (c€/kWh)",
+          "value": 1.067,
+          "formula": {}
+        },
+        {
+          "row": 4631,
+          "component": "Kosten WKK (c€/kWh)",
+          "value": 0.315,
+          "formula": {}
+        },
+        {
+          "row": 4632,
+          "component": "Tweevoudige meter dagtarief (c€/kWh)",
+          "value": 21.3471,
+          "formula": {}
+        },
+        {
+          "row": 4633,
+          "component": "Tweevoudige meter nachttarief (c€/kWh)",
+          "value": 18.30318,
+          "formula": {}
+        },
+        {
+          "row": 4634,
+          "component": "Uitsluitend nachtmeter (c€/kWh)",
+          "value": 18.8333,
+          "formula": {}
+        },
+        {
+          "row": 4635,
+          "component": "Vaste vergoeding (€)",
+          "value": 90.0,
+          "formula": {}
+        }
+      ],
+      "dayCents": 21.3471,
+      "nightCents": 18.30318,
+      "doubleFixedAnnual": 90.0
+    },
+    {
+      "id": "bb5e11c0916fd564cc91",
+      "supplier": "Eneco",
+      "product": "Eneco Aardgas Fix One",
+      "energy": "gas",
+      "type": "fixed",
+      "singleCents": 8.424,
+      "greenCents": 0,
+      "wkkCents": 0,
+      "fixedAnnual": 95.0,
+      "unitCents": 8.424,
+      "signupUrl": "https://eneco.be/nl/simulatie/",
+      "termsUrl": "https://eneco.be/nl/kmo/elektriciteit-gas/tariefkaarten/",
+      "sourceSheet": 5,
+      "sourceRows": [
+        {
+          "row": 4697,
+          "component": "Enkelvoudige meter dagtarief (c€/kWh)",
+          "value": 8.424,
+          "formula": {}
+        },
+        {
+          "row": 4698,
+          "component": "Vaste vergoeding (€)",
+          "value": 95.0,
+          "formula": {}
+        }
+      ]
+    },
+    {
+      "id": "0ced92110eac7260c7ed",
+      "supplier": "Eneco",
+      "product": "Eneco Aardgas Vast",
+      "energy": "gas",
+      "type": "fixed",
+      "singleCents": 8.702,
+      "greenCents": 0,
+      "wkkCents": 0,
+      "fixedAnnual": 95.0,
+      "unitCents": 8.702,
+      "signupUrl": "https://eneco.be/nl/simulatie/",
+      "termsUrl": "https://eneco.be/nl/kmo/elektriciteit-gas/tariefkaarten/",
+      "sourceSheet": 5,
+      "sourceRows": [
+        {
+          "row": 4699,
+          "component": "Enkelvoudige meter dagtarief (c€/kWh)",
+          "value": 8.702,
+          "formula": {}
+        },
+        {
+          "row": 4700,
+          "component": "Vaste vergoeding (€)",
+          "value": 95.0,
+          "formula": {}
+        }
+      ]
+    },
+    {
+      "id": "17371ea36eab0cf43542",
+      "supplier": "Energie.be",
+      "product": "Gas vast professioneel online",
+      "energy": "gas",
+      "type": "fixed",
+      "singleCents": 8.14,
+      "greenCents": 0,
+      "wkkCents": 0,
+      "fixedAnnual": 60.0,
+      "unitCents": 8.14,
+      "signupUrl": "https://www.energie.be/nl/bereken-je-prijs",
+      "termsUrl": "https://www.energie.be/",
+      "sourceSheet": 5,
+      "sourceRows": [
+        {
+          "row": 4701,
+          "component": "Enkelvoudige meter dagtarief (c€/kWh)",
+          "value": 8.14,
+          "formula": {}
+        },
+        {
+          "row": 4702,
+          "component": "Vaste vergoeding (€)",
+          "value": 60.0,
+          "formula": {}
+        }
+      ]
+    },
+    {
+      "id": "894bc9c23b8adfa45b25",
+      "supplier": "ENGIE",
+      "product": "Easy pro",
+      "energy": "gas",
+      "type": "fixed",
+      "singleCents": 9.797,
+      "greenCents": 0,
+      "wkkCents": 0,
+      "fixedAnnual": 60.0,
+      "unitCents": 9.797,
+      "signupUrl": "https://www.engie.be/nl/professionals/elektriciteit-gas",
+      "termsUrl": "https://www.engie.be/nl/professionals/elektriciteit-gas",
+      "sourceSheet": 5,
+      "sourceRows": [
+        {
+          "row": 4703,
+          "component": "Enkelvoudige meter dagtarief (c€/kWh)",
+          "value": 9.797,
+          "formula": {}
+        },
+        {
+          "row": 4704,
+          "component": "Vaste vergoeding (€)",
+          "value": 60.0,
+          "formula": {}
+        }
+      ]
+    },
+    {
+      "id": "d10507b32394aedcbc5f",
+      "supplier": "ENGIE",
+      "product": "Empower Pro",
+      "energy": "gas",
+      "type": "fixed",
+      "singleCents": 9.797,
+      "greenCents": 0,
+      "wkkCents": 0,
+      "fixedAnnual": 60.0,
+      "unitCents": 9.797,
+      "signupUrl": "https://www.engie.be/nl/professionals/elektriciteit-gas",
+      "termsUrl": "https://www.engie.be/nl/professionals/elektriciteit-gas",
+      "sourceSheet": 5,
+      "sourceRows": [
+        {
+          "row": 4705,
+          "component": "Enkelvoudige meter dagtarief (c€/kWh)",
+          "value": 9.797,
+          "formula": {}
+        },
+        {
+          "row": 4706,
+          "component": "Vaste vergoeding (€)",
+          "value": 60.0,
+          "formula": {}
+        }
+      ]
+    },
+    {
+      "id": "fcd5c93070d9cd0bb0c2",
+      "supplier": "Luminus",
+      "product": "BasicFix Pro Online",
+      "energy": "gas",
+      "type": "fixed",
+      "singleCents": 8.22529,
+      "greenCents": 0,
+      "wkkCents": 0,
+      "fixedAnnual": 20.0,
+      "unitCents": 8.22529,
+      "signupUrl": "https://www.luminus.be/energy-price-calculator/nl/pro/huidige-klant",
+      "termsUrl": "https://www.luminus.be/nl/pro/",
+      "sourceSheet": 5,
+      "sourceRows": [
+        {
+          "row": 4707,
+          "component": "Enkelvoudige meter dagtarief (c€/kWh)",
+          "value": 8.22529,
+          "formula": {}
+        },
+        {
+          "row": 4708,
+          "component": "Vaste vergoeding (€)",
+          "value": 20.0,
+          "formula": {}
+        }
+      ]
+    },
+    {
+      "id": "320690efcd671e11cca5",
+      "supplier": "Luminus",
+      "product": "Comfy Pro",
+      "energy": "gas",
+      "type": "fixed",
+      "singleCents": 9.20071,
+      "greenCents": 0,
+      "wkkCents": 0,
+      "fixedAnnual": 50.0,
+      "unitCents": 9.20071,
+      "signupUrl": "https://www.luminus.be/energy-price-calculator/nl/pro/huidige-klant",
+      "termsUrl": "https://www.luminus.be/nl/pro/",
+      "sourceSheet": 5,
+      "sourceRows": [
+        {
+          "row": 4709,
+          "component": "Enkelvoudige meter dagtarief (c€/kWh)",
+          "value": 9.20071,
+          "formula": {}
+        },
+        {
+          "row": 4710,
+          "component": "Vaste vergoeding (€)",
+          "value": 50.0,
+          "formula": {}
+        }
+      ]
+    },
+    {
+      "id": "7727dc9ede566bc237ea",
+      "supplier": "Luminus",
+      "product": "Comfy Pro+",
+      "energy": "gas",
+      "type": "fixed",
+      "singleCents": 9.57571,
+      "greenCents": 0,
+      "wkkCents": 0,
+      "fixedAnnual": 50.0,
+      "unitCents": 9.57571,
+      "signupUrl": "https://www.luminus.be/energy-price-calculator/nl/pro/huidige-klant",
+      "termsUrl": "https://www.luminus.be/nl/pro/",
+      "sourceSheet": 5,
+      "sourceRows": [
+        {
+          "row": 4711,
+          "component": "Enkelvoudige meter dagtarief (c€/kWh)",
+          "value": 9.57571,
+          "formula": {}
+        },
+        {
+          "row": 4712,
+          "component": "Vaste vergoeding (€)",
+          "value": 50.0,
+          "formula": {}
+        }
+      ]
+    },
+    {
+      "id": "4b6490f1a271e2650e60",
+      "supplier": "Luminus",
+      "product": "MaxxFix Pro",
+      "energy": "gas",
+      "type": "fixed",
+      "singleCents": 8.8883,
+      "greenCents": 0,
+      "wkkCents": 0,
+      "fixedAnnual": 50.0,
+      "unitCents": 8.8883,
+      "signupUrl": "https://www.luminus.be/energy-price-calculator/nl/pro/huidige-klant",
+      "termsUrl": "https://www.luminus.be/nl/pro/",
+      "sourceSheet": 5,
+      "sourceRows": [
+        {
+          "row": 4713,
+          "component": "Enkelvoudige meter dagtarief (c€/kWh)",
+          "value": 8.8883,
+          "formula": {}
+        },
+        {
+          "row": 4714,
+          "component": "Vaste vergoeding (€)",
+          "value": 50.0,
+          "formula": {}
+        }
+      ]
+    },
+    {
+      "id": "2b9c9dd28a652253da99",
+      "supplier": "TotalEnergies",
+      "product": "proComfort Vast",
+      "energy": "gas",
+      "type": "fixed",
+      "singleCents": 7.49,
+      "greenCents": 0,
+      "wkkCents": 0,
+      "fixedAnnual": 90.0,
+      "unitCents": 7.49,
+      "signupUrl": "https://totalenergies.be/nl/professioneel/producten-en-diensten/my-business/ons-energieaanbod/bereken-jouw-prijs/aantal-locatie",
+      "termsUrl": "https://totalenergies.be/nl/professioneel/elektriciteit-en-gas",
+      "sourceSheet": 5,
+      "sourceRows": [
+        {
+          "row": 4729,
+          "component": "Enkelvoudige meter dagtarief (c€/kWh)",
+          "value": 7.49,
+          "formula": {}
+        },
+        {
+          "row": 4730,
+          "component": "Vaste vergoeding (€)",
+          "value": 90.0,
+          "formula": {}
+        }
+      ]
+    }
+  ],
+  "dynamicProducts": [
+    {
+      "id": "dd18dfe0a1fd974823fc",
+      "supplier": "Ecofix",
+      "product": "Motion Online Pro",
+      "energy": "electricity",
+      "type": "dynamic",
+      "singleCents": 15.386558430000003,
+      "greenCents": 1.1415,
+      "wkkCents": 0.3679,
+      "fixedAnnual": 10.0,
+      "unitCents": 16.89595843,
+      "signupUrl": "https://portal.ecofixgp.be/contract-type/flexyonl",
+      "termsUrl": "https://www.ecofixgp.be/tarieven/tariefkaarten",
+      "sourceSheet": 3,
+      "sourceRows": [
+        {
+          "row": 16358,
+          "component": "Dynamisch tarief",
+          "value": 15.386558430000003,
+          "formula": {
+            "Z": "0.10100000000000001",
+            "AD": "0.74",
+            "L": "145.01543000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16359,
+          "component": "Kosten groene stroom (c€/kWh)",
+          "value": 1.1415,
+          "formula": {
+            "L": "145.01543000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16360,
+          "component": "Kosten WKK (c€/kWh)",
+          "value": 0.3679,
+          "formula": {
+            "L": "145.01543000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16361,
+          "component": "Vaste vergoeding (€)",
+          "value": 10.0,
+          "formula": {
+            "L": "145.01543000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        }
+      ],
+      "indexReference": {
+        "parameter": "EPEX SPOT Belgium/Belpex (kwartier)",
+        "value": 145.01543
+      }
+    },
+    {
+      "id": "6629ea887e83b82b62a8",
+      "supplier": "Eneco",
+      "product": "Eneco Zon & Wind Dynamisch",
+      "energy": "electricity",
+      "type": "dynamic",
+      "singleCents": 15.66057386,
+      "greenCents": 1.093,
+      "wkkCents": 0.336,
+      "fixedAnnual": 120.0,
+      "unitCents": 17.089573859999998,
+      "signupUrl": "https://eneco.be/nl/simulatie/",
+      "termsUrl": "https://eneco.be/nl/kmo/elektriciteit-gas/tariefkaarten/",
+      "sourceSheet": 3,
+      "sourceRows": [
+        {
+          "row": 16387,
+          "component": "Dynamisch tarief",
+          "value": 15.66057386,
+          "formula": {
+            "Z": "0.10199999999999999",
+            "AA": "0",
+            "AB": "0",
+            "AD": "0.86899999999999999",
+            "L": "145.01543000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16388,
+          "component": "Kosten groene stroom (c€/kWh)",
+          "value": 1.093,
+          "formula": {
+            "L": "145.01543000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16389,
+          "component": "Kosten WKK (c€/kWh)",
+          "value": 0.336,
+          "formula": {
+            "L": "145.01543000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16390,
+          "component": "Vaste vergoeding (€)",
+          "value": 120.0,
+          "formula": {
+            "L": "145.01543000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        }
+      ],
+      "indexReference": {
+        "parameter": "EPEX SPOT Belgium/Belpex (uur)",
+        "value": 145.01543
+      }
+    },
+    {
+      "id": "de8a47c74613a33ad6b9",
+      "supplier": "Energie.be",
+      "product": "Elektriciteit dynamisch professioneel online",
+      "energy": "electricity",
+      "type": "dynamic",
+      "singleCents": 15.58160472,
+      "greenCents": 1.103,
+      "wkkCents": 0.364,
+      "fixedAnnual": 25.0,
+      "unitCents": 17.04860472,
+      "signupUrl": "https://www.energie.be/nl/bereken-je-prijs",
+      "termsUrl": "https://www.energie.be/",
+      "sourceSheet": 3,
+      "sourceRows": [
+        {
+          "row": 16405,
+          "component": "Dynamisch tarief",
+          "value": 15.58160472,
+          "formula": {
+            "Z": "0.104",
+            "AD": "0.5",
+            "L": "145.01543000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16406,
+          "component": "Kosten groene stroom (c€/kWh)",
+          "value": 1.103,
+          "formula": {
+            "L": "145.01543000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16407,
+          "component": "Kosten WKK (c€/kWh)",
+          "value": 0.364,
+          "formula": {
+            "L": "145.01543000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16408,
+          "component": "Vaste vergoeding (€)",
+          "value": 25.0,
+          "formula": {
+            "L": "145.01543000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        }
+      ],
+      "indexReference": {
+        "parameter": "EPEX SPOT Belgium/Belpex (kwartier)",
+        "value": 145.01543
+      }
+    },
+    {
+      "id": "9803aa85e197253ddfb0",
+      "supplier": "ENGIE",
+      "product": "Dynamic pro",
+      "energy": "electricity",
+      "type": "dynamic",
+      "singleCents": 15.780503177000002,
+      "greenCents": 1.1,
+      "wkkCents": 0.392,
+      "fixedAnnual": 125.0,
+      "unitCents": 17.272503177,
+      "signupUrl": "https://www.engie.be/nl/professionals/elektriciteit-gas",
+      "termsUrl": "https://www.engie.be/nl/professionals/elektriciteit-gas",
+      "sourceSheet": 3,
+      "sourceRows": [
+        {
+          "row": 16453,
+          "component": "Dynamisch tarief",
+          "value": 15.780503177000002,
+          "formula": {
+            "Z": "0.10390000000000001",
+            "AD": "0.71340000000000003",
+            "L": "145.01543000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16454,
+          "component": "Kosten groene stroom (c€/kWh)",
+          "value": 1.1,
+          "formula": {
+            "L": "145.01543000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16455,
+          "component": "Kosten WKK (c€/kWh)",
+          "value": 0.392,
+          "formula": {
+            "L": "145.01543000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16456,
+          "component": "Vaste vergoeding (€)",
+          "value": 125.0,
+          "formula": {
+            "L": "145.01543000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        }
+      ],
+      "indexReference": {
+        "parameter": "EPEX SPOT Belgium/Belpex (kwartier)",
+        "value": 145.01543
+      }
+    },
+    {
+      "id": "635d37ae024541bc71c0",
+      "supplier": "Luminus",
+      "product": "Dynamic Pro Online",
+      "energy": "electricity",
+      "type": "dynamic",
+      "singleCents": 16.153621545500002,
+      "greenCents": 1.10302,
+      "wkkCents": 0.36414,
+      "fixedAnnual": 100.0,
+      "unitCents": 17.6207815455,
+      "signupUrl": "https://www.luminus.be/energy-price-calculator/nl/pro/huidige-klant",
+      "termsUrl": "https://www.luminus.be/nl/pro/",
+      "sourceSheet": 3,
+      "sourceRows": [
+        {
+          "row": 16552,
+          "component": "Dynamisch tarief",
+          "value": 16.153621545500002,
+          "formula": {
+            "Z": "0.10185",
+            "AD": "1.3837999999999999",
+            "L": "145.01543000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16553,
+          "component": "Kosten groene stroom (c€/kWh)",
+          "value": 1.10302,
+          "formula": {
+            "L": "145.01543000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16554,
+          "component": "Kosten WKK (c€/kWh)",
+          "value": 0.36414,
+          "formula": {
+            "L": "145.01543000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        },
+        {
+          "row": 16555,
+          "component": "Vaste vergoeding (€)",
+          "value": 100.0,
+          "formula": {
+            "L": "145.01543000000001",
+            "P": "(Empty)",
+            "T": "(Empty)",
+            "X": "(Empty)"
+          }
+        }
+      ],
+      "indexReference": {
+        "parameter": "EPEX SPOT Belgium/Belpex (uur)",
+        "value": 145.01543
+      }
+    }
+  ],
+  "excluded": [
+    [
+      "ENGIE (handelsnaam van Electrabel)",
+      "Empower Pro met Flextime",
+      "special time schedule/conditions"
+    ],
+    [
+      "ENGIE (handelsnaam van Electrabel)",
+      "Leegstaande woning",
+      "special time schedule/conditions"
+    ],
+    [
+      "Luminus",
+      "SmartFlex Pro",
+      "special time schedule/conditions"
+    ],
+    [
+      "TotalEnergies",
+      "proDrive",
+      "special time schedule/conditions"
+    ],
+    [
+      "ENGIE (handelsnaam van Electrabel)",
+      "Leegstaande woning",
+      "special time schedule/conditions"
+    ]
+  ]
+}

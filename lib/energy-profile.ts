@@ -1,0 +1,16 @@
+import {sectorIndex,type SectorRow} from "./company-profile";
+export type EnergyProfileInput={annualKwh:number;points:number;year:number;area:number;hoursPerDay:number;daysPerYear:number;solar:boolean;electricHeat:boolean;ev:boolean;reductionPercent:number};
+export function energyProfile(p:EnergyProfileInput,row:SectorRow,referenceYear:number){
+ const c=sectorIndex(p,row,referenceYear),maxDays=new Date(Date.UTC(p.year,2,0)).getUTCDate()===29?366:365;
+ if(!c||![p.area,p.hoursPerDay,p.daysPerYear,p.reductionPercent].every(Number.isFinite)||p.area<0||p.area>1e7||p.hoursPerDay<0||p.hoursPerDay>24||p.daysPerYear<0||p.daysPerYear>maxDays||!Number.isInteger(p.daysPerYear)||p.reductionPercent<0||p.reductionPercent>40)return null;
+ const ratio=c.index/100,score=Math.round(100/(1+ratio)),hours=p.hoursPerDay*p.daysPerYear,referenceTotal=c.mean*p.points;
+ const tips:{title:string;detail:string}[]=[];
+ tips.push(ratio>1?{title:"Onderzoek de hogere netafname",detail:`Uw netafname per aansluiting ligt ${(c.index-100).toLocaleString("nl-BE",{maximumFractionDigits:1})}% boven de sectorreferentie. Vergelijk eerst schaal, activiteit en draaiuren. Dit verschil is geen bewezen verspilling of realiseerbare besparing.`}:{title:"Bewaar uw lagere afnamepositie",detail:"Uw netafname per aansluiting ligt op of onder de sectorreferentie. Controleer of omzet, productie en comfort gelijk blijven voordat u dit als efficiëntiewinst beschouwt."});
+ tips.push({title:"Meet buiten de openingsuren",detail:"Bekijk in uw kwartierdata de afname tijdens gesloten uren. Controleer stand-by, verlichting, ventilatie en ingestelde tijdschema’s. Zonder meetreeks berekent dit model geen sluimerverlies."});
+ if(/horeca|voeding|landbouw/i.test(row.subsector))tips.push({title:"Controleer koeling en procesuren",detail:"Laat instellingen, onderhoud en tijdschema’s van koelinstallaties en energie-intensieve processen controleren. Bereken pas een maatregelbesparing met gemeten vermogen en werkelijke draaiuren."});
+ else tips.push({title:"Controleer verlichting en klimaatregeling",detail:"Vergelijk de tijdschema’s van verlichting, ventilatie en verwarming met het werkelijke gebruik. Kies na meting welke instellingen kunnen worden aangepast."});
+ if(p.solar)tips.push({title:"Neem eigen zonneproductie mee",detail:"Deze score meet alleen afname van het net. Eigen verbruik van zonnepanelen kan de score verhogen zonder dat het totale elektriciteitsgebruik daalt. Voeg productie en injectie toe aan een volledige energiebalans."});
+ if(p.electricHeat)tips.push({title:"Beoordeel elektrische verwarming apart",detail:"Warmtepomp of elektrische verwarming verhoogt de elektriciteitsvraag en kan gas vervangen. Vergelijk ook warmtebehoefte, gasverbruik en weer; deze sectorbron corrigeert hiervoor niet."});
+ if(p.ev)tips.push({title:"Scheid laadverbruik van bedrijfsverbruik",detail:"Gebruik de laadpaalmeting om laden apart te volgen. Onderzoek spreiding op basis van kwartierpieken en contractvoorwaarden; een jaarfactuur bewijst geen piekbesparing."});
+ return {...c,score,model:"FS-netafname-v1",referenceTotal,gapKwh:p.annualKwh-referenceTotal,perM2:p.area>0?p.annualKwh/p.area:null,openHours:hours||null,perOpenHour:hours>0?p.annualKwh/hours:null,targetKwh:p.annualKwh*(1-p.reductionPercent/100),scenarioReductionKwh:p.annualKwh*p.reductionPercent/100,tips};
+}

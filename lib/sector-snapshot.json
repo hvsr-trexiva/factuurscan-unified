@@ -1,0 +1,133 @@
+{
+  "year": 2025,
+  "sourceUpdatedAt": "2026-08-24T12:53:10.761Z",
+  "checkedAt": "2026-10-15T22:50:00Z",
+  "rows": [
+    {
+      "sector": "Energiesector",
+      "subsector": "Andere energie",
+      "points": 114,
+      "kwh": 17952009.009999998
+    },
+    {
+      "sector": "Energiesector",
+      "subsector": "Elektriciteit- en warmte sector",
+      "points": 5701,
+      "kwh": 100214161.53
+    },
+    {
+      "sector": "Industrie",
+      "subsector": "Andere industrie",
+      "points": 50980,
+      "kwh": 1597809969.57
+    },
+    {
+      "sector": "Industrie",
+      "subsector": "Chemie",
+      "points": 432,
+      "kwh": 712939387.31
+    },
+    {
+      "sector": "Industrie",
+      "subsector": "Metaalverwerkende nijverheid",
+      "points": 6155,
+      "kwh": 1096273322.66
+    },
+    {
+      "sector": "Industrie",
+      "subsector": "Minerale niet-metaalproducten",
+      "points": 834,
+      "kwh": 581654475.01
+    },
+    {
+      "sector": "Industrie",
+      "subsector": "Non-ferro",
+      "points": 83,
+      "kwh": 103529057.54
+    },
+    {
+      "sector": "Industrie",
+      "subsector": "Papier en uitgeverijen",
+      "points": 737,
+      "kwh": 161935255.67000002
+    },
+    {
+      "sector": "Industrie",
+      "subsector": "Textiel, leder en kleding",
+      "points": 874,
+      "kwh": 408817792.2
+    },
+    {
+      "sector": "Industrie",
+      "subsector": "Voeding, dranken en tabak",
+      "points": 4862,
+      "kwh": 2998378671.62
+    },
+    {
+      "sector": "Landbouw, bosbouw en visserij",
+      "subsector": "Landbouw, bosbouw en visserij",
+      "points": 17083,
+      "kwh": 550144095.5699999
+    },
+    {
+      "sector": "Openbare verlichting",
+      "subsector": "Openbare verlichting",
+      "points": 181,
+      "kwh": 29616712.060000002
+    },
+    {
+      "sector": "Tertiaire sector",
+      "subsector": "Andere gemeenschaps-, sociale en persoonlijke dienstverlening",
+      "points": 30419,
+      "kwh": 1258463514.99
+    },
+    {
+      "sector": "Tertiaire sector",
+      "subsector": "Gezondheidszorg en maatschappelijke dienstverlening",
+      "points": 20469,
+      "kwh": 924291276.89
+    },
+    {
+      "sector": "Tertiaire sector",
+      "subsector": "Handel",
+      "points": 66922,
+      "kwh": 2619371991.39
+    },
+    {
+      "sector": "Tertiaire sector",
+      "subsector": "Horeca",
+      "points": 28203,
+      "kwh": 831089527.79
+    },
+    {
+      "sector": "Tertiaire sector",
+      "subsector": "Kantoren en administraties",
+      "points": 194161,
+      "kwh": 3745225521.96
+    },
+    {
+      "sector": "Tertiaire sector",
+      "subsector": "Onderwijs",
+      "points": 6638,
+      "kwh": 605683774.0999999
+    },
+    {
+      "sector": "Transport",
+      "subsector": "Vervoer over water",
+      "points": 90,
+      "kwh": 2970129.0
+    },
+    {
+      "sector": "Transport",
+      "subsector": "Vervoer via pijpleidingen",
+      "points": 30,
+      "kwh": 1442279.78
+    },
+    {
+      "sector": "Transport",
+      "subsector": "Wegvervoer",
+      "points": 3521,
+      "kwh": 203154379.29
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "id": "horeca",
+    "sector": "Horeca",
+    "municipality": "Gent",
+    "image": "/images/sector-horeca.png",
+    "title": "Besparen én een aanspreekpunt houden.",
+    "context": "Voorbeeldsituatie: een restaurant in Gent",
+    "body": "Uw mogelijke besparing staat centraal. We helpen uw horecazaak bij de vergelijking, de voorbereiding van uw gekozen overstap en vragen achteraf. Uw factuur, voorstel en beschikbare updates blijven samen in uw dossier.",
+    "checks": [
+      "Begeleiding vóór en na uw overstap",
+      "Hulp bij factuur- en contractvragen",
+      "Uw aanvraag en updates samen bekijken"
+    ]
+  },
+  {
+    "id": "bakkerij",
+    "sector": "Bakkerijen & voeding",
+    "municipality": "Hasselt",
+    "image": "/images/bakery-warm.webp",
+    "title": "Van uw eerste factuur tot de opvolging erna.",
+    "context": "Voorbeeldsituatie: een bakkerij in Hasselt",
+    "body": "U focust op uw bakkerij. Wij helpen uw energieprijzen vergelijken, uw aansluitingsgegevens controleren en de administratie van uw aanvraag voorbereiden. Ook na uw aanvraag kunt u hulp vragen bij uw facturen en contract.",
+    "checks": [
+      "Controle van uw aangeleverde factuur",
+      "Administratieve ondersteuning bij uw aanvraag",
+      "Begeleiding vóór en na uw overstap"
+    ]
+  },
+  {
+    "id": "winkel",
+    "sector": "Winkels & bloemenzaken",
+    "municipality": "Mechelen",
+    "image": "/images/sme-florist-guidance.png",
+    "title": "Meer overzicht. Minder administratie.",
+    "context": "Voorbeeldsituatie: een bloemenzaak in Mechelen",
+    "body": "Voor uw winkel begint een goede energiekeuze met een helder voorstel. We helpen uw gegevens verzamelen en uw gekozen overstap voorbereiden. Vragen over een factuur of een nieuwe mogelijkheid? Vraag begeleiding vanuit hetzelfde dossier.",
+    "checks": [
+      "Een voorstel met uw mogelijke besparing",
+      "Administratieve ondersteuning bij uw aanvraag",
+      "Nieuwe mogelijkheden laten beoordelen"
+    ]
+  },
+  {
+    "id": "salon",
+    "sector": "Kappers & schoonheid",
+    "municipality": "Leuven",
+    "image": "/images/sector-salon.png",
+    "title": "Een helder voorstel. Hulp wanneer u die nodig hebt.",
+    "context": "Voorbeeldsituatie: een kapsalon in Leuven",
+    "body": "Uw agenda is al vol genoeg. Bekijk het mogelijke energievoordeel voor uw salon en vraag hulp bij uw aanvraag. Nadien helpen we uw factuur en voorschot naast uw verbruik bekijken en ondersteunen we u bij een vraag om uw voorschot aan te passen.",
+    "checks": [
+      "Een voorstel met uw mogelijke besparing",
+      "Hulp bij controle van uw voorschot",
+      "Ondersteuning bij een aanvraag tot aanpassing"
+    ]
+  },
+  {
+    "id": "garage",
+    "sector": "Garages & ateliers",
+    "municipality": "Brugge",
+    "image": "/images/sector-garage.png",
+    "title": "Uw werkplaats vooruit. Uw energie opgevolgd.",
+    "context": "Voorbeeldsituatie: een garage in Brugge",
+    "body": "Eén of meerdere aansluitingen: houd uw energiedossier overzichtelijk bij elkaar. We helpen de gegevens voor uw gekozen overstap voorbereiden, volgen de aanvraag mee op en ondersteunen u bij administratieve vragen of factuurcontrole.",
+    "checks": [
+      "Begeleiding voor meerdere aansluitingen",
+      "Administratieve ondersteuning bij uw aanvraag",
+      "Hulp bij factuur- en contractvragen"
+    ]
+  },
+  {
+    "id": "kantoor",
+    "sector": "Kantoren & praktijken",
+    "municipality": "Antwerpen",
+    "image": "/images/brussels-advisers-warm.webp",
+    "title": "Uw keuze centraal. Ook na de aanvraag.",
+    "context": "Voorbeeldsituatie: een kantoor in Antwerpen",
+    "body": "U krijgt inzicht in het berekende prijsverschil en beslist zelf of u verdergaat. We helpen met de voorbereiding en opvolging van uw aanvraag. U kunt hulp vragen bij factuurcontrole, voorschotten en het beoordelen van nieuwe energiemogelijkheden.",
+    "checks": [
+      "Uw keuze en wensen als vertrekpunt",
+      "Hulp bij factuur- en contractvragen",
+      "Nieuwe mogelijkheden laten beoordelen"
+    ]
+  }
+]

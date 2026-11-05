@@ -1,0 +1,2 @@
+import {db,hash,StoredRequest,validId} from "./server";
+export async function privateCase(req:Request,id:string){const key=req.headers.get("x-report-token")||"";if(!validId(id)||!/^[a-f0-9]{64}$/.test(key))return null;const r=await db().prepare("SELECT * FROM requests WHERE id=? AND expires_at>?").bind(id,new Date().toISOString()).first<StoredRequest>();return r&&await hash(key)===r.access_hash?r:null;}

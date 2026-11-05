@@ -1,0 +1,4 @@
+import {NextResponse} from 'next/server';
+import {sessionToken,equal} from '@/lib/node-auth';
+import {rateLimit,sameOrigin} from '@/lib/server';
+export async function POST(request:Request){if(!sameOrigin(request)||!await rateLimit(request,'login',10))return new Response('Too many attempts or invalid origin',{status:429});const f=await request.formData();if(!process.env.ADMIN_PASSWORD||process.env.ADMIN_PASSWORD.length<12||!process.env.ADMIN_EMAIL)return new Response('Configure admin credentials',{status:503});if(!equal(String(f.get('email')),process.env.ADMIN_EMAIL)||!equal(String(f.get('password')),process.env.ADMIN_PASSWORD))return new Response('Invalid credentials',{status:401});const r=NextResponse.redirect(new URL('/admin',request.url),303);r.cookies.set('fs_session',sessionToken(process.env.ADMIN_EMAIL),{httpOnly:true,secure:new URL(request.url).protocol==='https:',sameSite:'strict',path:'/',maxAge:28800});return r;}

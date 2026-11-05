@@ -1,0 +1,34 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1790785488132,
+      "tag": "0000_outstanding_shotgun",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1790799078147,
+      "tag": "0001_lyrical_pepper_potts",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1792095777493,
+      "tag": "0002_big_alice",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1792436429451,
+      "tag": "0003_loud_mindworm",
+      "breakpoints": true
+    }
+  ]
+}

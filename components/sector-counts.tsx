@@ -1,0 +1,4 @@
+"use client";
+import {useEffect,useState} from "react";
+import {associations} from "@/lib/service-catalog";
+export default function SectorCounts(){const [data,setData]=useState<{association:string;count:number|null}[]|null>(null);useEffect(()=>{fetch("/api/service-stats").then(r=>{if(!r.ok)throw Error();return r.json() as Promise<{counts:{association:string;count:number|null}[]}>}).then(d=>setData(d.counts)).catch(()=>{})},[]);return <div className="sector-counts">{associations.map(a=>{const row=data?.find(r=>r.association===a.id);return <article key={a.id}><b>{data===null?"—":row?.count===null?"<10":row?.count??0}</b><span>Aanvragen met eigen opgave {a.name}</span></article>})}<p>Alleen aanvragen met aggregatietoestemming. Geen ledenaantallen, partnerschappen of unieke bedrijven. Kleine groepen worden afgeschermd.</p></div>}

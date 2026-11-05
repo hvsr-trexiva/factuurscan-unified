@@ -1,0 +1,2 @@
+"use client";
+export default function ProfilePrice({kwh,points}:{kwh:number;points:number;targetKwh:number}){return <section className="profile-card"><span className="section-label">UW PERSOONLIJKE ENERGIEVOORSTEL</span><h2>Vergelijk ons eigen aanbod.</h2><p>Uw profiel bevat {kwh.toLocaleString("nl-BE")} kWh en {points} aansluiting(en). De vergelijking begint met uw huidige leverancier en contracttype. Alleen de vrijgegeven aanbiedingen uit onze eigen maandtabel worden vergeleken.</p><a className="button" href="/energie-vergelijken">Naar mijn energievoorstel →</a></section>}

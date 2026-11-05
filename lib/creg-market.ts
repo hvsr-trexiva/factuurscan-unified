@@ -1,0 +1,20 @@
+export type CregProduct={provider:string;product:string;price:number;type:string};
+export type CregRange={category:"elek_afn_prof"|"gas_prof";count:number;lowest:CregProduct;highest:CregProduct};
+export type CregMarket={mode:"source_checked"|"dated_snapshot";month:string;checkedAt:string;ranges:CregRange[]};
+export const cregSnapshot:CregMarket={mode:"dated_snapshot",month:"2026-10",checkedAt:"2026-10-15T00:00:00Z",ranges:[
+ {category:"elek_afn_prof",count:109,lowest:{provider:"WASE WIND",product:"VAST-DYNAMISCH ELEKTRICITEIT (1 jaar, dynamisch)",price:8018,type:"DYNAMISCH"},highest:{provider:"MEGA",product:"DYNAMIC (1 jaar, dynamisch)",price:12996,type:"DYNAMISCH"}},
+ {category:"gas_prof",count:71,lowest:{provider:"ECOFIX",product:"ECOFIX FLEXY ONLINE PRO (1 jaar, variabel)",price:7208,type:"VARIABEL"},highest:{provider:"ENGIE ELECTRABEL",product:"EMPOWER PRO (onbep. duur, vast)",price:9857,type:"VAST"}}
+]};
+export function cregQuery(category:CregRange["category"],month:string){return {index:"creg",type:"_doc",body:{query:{bool:{must:[{term:{category}},{term:{status:"A"}},{bool:{should:[{term:{type:"VAST"}},{bool:{must:[{term:{type:"VARIABEL"}},{term:{month}}]}},{bool:{must:[{term:{type:"DYNAMISCH"}},{term:{month}}]}}]}},{term:{"region.keyword":"VL"}}]}},size:1,aggs:{max_price:{max:{field:"price"}},min_price:{min:{field:"price"}},cheapest:{top_hits:{size:1,sort:[{price:{order:"asc"}}]}},most_expensive:{top_hits:{size:1,sort:[{price:{order:"desc"}}]}}}}};}
+export function parseCreg(raw:unknown,category:CregRange["category"],month:string):CregRange{
+ const d=(raw as any)?.data;if(d?.timed_out||d?._shards?.failed||!d?.aggregations||!Number.isInteger(d?.hits?.total)||d.hits.total<1)throw Error("invalid_creg_response");
+ function product(key:string,extreme:string):CregProduct{const hit=d.aggregations[key]?.hits?.hits?.[0],s=hit?._source,p=d.aggregations[extreme]?.value;
+ if(hit?._index!==`creg_${month.replace("-","")}`||s?.category!==category||s?.region!=="VL"||s?.status!=="A"||!Number.isFinite(p)||p<0||p!==s.price||typeof s.provider!=="string"||typeof s.product_nl!=="string"||!["VAST","VARIABEL","DYNAMISCH"].includes(s.type))throw Error("unverified_creg_product");
+ return {provider:s.provider.slice(0,100).trim(),product:s.product_nl.slice(0,160).trim(),price:p,type:s.type};}
+ const lowest=product("cheapest","min_price"),highest=product("most_expensive","max_price");if(lowest.price>highest.price)throw Error("invalid_creg_range");return {category,count:d.hits.total,lowest,highest};
+}
+async function getJSON(url:string,method="GET"){const r=await fetch(url,{method,signal:AbortSignal.timeout(15000),redirect:"error",headers:{Accept:"application/json"}});if(!r.ok)throw Error("creg_http_"+r.status);const reader=r.body?.getReader();if(!reader)throw Error("empty_creg");const chunks:Uint8Array[]=[];let size=0;while(true){const part=await reader.read();if(part.done)break;size+=part.value.length;if(size>150000){await reader.cancel();throw Error("creg_too_large");}chunks.push(part.value);}const bytes=new Uint8Array(size);let offset=0;for(const c of chunks){bytes.set(c,offset);offset+=c.length;}return JSON.parse(new TextDecoder().decode(bytes));}
+export async function fetchCreg():Promise<CregMarket>{try{const d=await getJSON("https://www.creg.be/nl/cregscan-api/elastic/current-month/creg"),rawMonth=d?.data?.current_month;
+ const m=typeof rawMonth==="string"&&rawMonth.match(/^01\/(0[1-9]|1[0-2])\/(20\d{2})(?: 00:00:00)?$/);if(!m)throw Error("invalid_month");const month=`${m[2]}-${m[1]}`;if(month>new Date().toISOString().slice(0,7))throw Error("future_month");
+ const categories:CregRange["category"][]=["elek_afn_prof","gas_prof"];const ranges=await Promise.all(categories.map(async category=>parseCreg(await getJSON("https://www.creg.be/cregscan-api/elastic?search="+encodeURIComponent(JSON.stringify(cregQuery(category,rawMonth))),"POST"),category,month)));
+ return {mode:"source_checked",month,checkedAt:new Date().toISOString(),ranges};}catch(e){console.warn("market_creg_refresh_failed",e instanceof Error?e.message:"unknown");return cregSnapshot;}}

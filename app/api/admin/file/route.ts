@@ -1,0 +1,3 @@
+import {bucket,db,json,ownerAuthorized,dashboardReadAuthorized} from "@/lib/server";
+import {retainedCaseSql} from "@/lib/sales-workspace";
+export async function GET(req:Request){if(!await dashboardReadAuthorized())return json({},403);const q=new URL(req.url).searchParams;const row=await db().prepare(`SELECT documents FROM requests r WHERE r.id=? AND ${retainedCaseSql}`).bind(q.get("id"),new Date().toISOString()).first<{documents:string}>();const doc=row&&JSON.parse(row.documents)[Number(q.get("index"))];if(!doc)return json({},404);const file=await bucket().get(doc.key);return file?new Response(file.body,{headers:{"Content-Type":doc.contentType,"Content-Disposition":"attachment","Cache-Control":"no-store","X-Content-Type-Options":"nosniff"}}):json({},404);}
