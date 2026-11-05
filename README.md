@@ -1,35 +1,39 @@
-# FactuurScan unified Node application — 5 November 2026
+# FactuurScan — Hostinger MySQL revision, 5 November 2026
 
-One Next.js Node 24 app. Website `/`, admin dashboard `/admin`, customer review `/overstap-afronden`, all API routes and the same calculation/document/email code in one deployment. No Python service, Cloudflare account or separate CRM deployment is required.
+One Next.js Node 24 application: website `/`, dashboard `/admin`. This revision removes SQLite and all requirements for local writable application folders. MySQL holds case records and private invoice/PDF bytes in transactional chunks. Use this for the initial single-instance test; database storage consumption includes uploaded files. The SQL schema is initialized lazily on the first database operation, never during build. Existing tables are preserved with CREATE TABLE IF NOT EXISTS. Use the newly created empty database, not an unrelated production database.
 
-## Hostinger Web App setup
+## Update the GitHub repository
 
-Upload this ZIP using Hostinger **Web App → Node.js**, select Next.js and **Node 24**. Project root is the extracted folder containing package.json. Install: `npm ci`; build: `npm run build`; start: `npm start`. Hostinger supplies PORT. Configure environment variables in hPanel from `.env.example`; do not upload production secrets.
+Replace the existing repository files with this ZIP's contents, keeping package.json at the repository root. Commit and push. Hostinger settings: Next.js, Node 24, npm, root `./`, build `npm run build`, output `.next`, start `npm start` if prompted. Hostinger supplies PORT.
 
-Required: ADMIN_EMAIL, ADMIN_PASSWORD (12+ characters), AUTH_SECRET, RATE_LIMIT_SECRET and CRON_SECRET (each secret at least 32 random characters). Set DATA_DIRECTORY to an **absolute writable path outside the deployment directory**, for example `/home/ACCOUNT/factuurscan-data`. This holds the SQLite database and private invoice/PDF objects. Confirm with Hostinger that the directory survives redeployment. Back up this directory, including the database, independently. A ZIP contains application source, not customer data.
+## Change the Hostinger environment
 
-Open `/api/health`, then `/admin` and sign in. Database tables migrate automatically under an exclusive SQLite transaction. One instance should use the database; do not scale replicas across hosts. SQLite and private files suit the initial single-instance test deployment.
-
-## Automatic processing
-
-Configure an authenticated Hostinger scheduled task every minute:
+Remove `DATA_DIRECTORY`. It is no longer used. Add:
 
 ```
-curl --fail --silent --show-error --max-time 110 -X POST -H 'Authorization: Bearer YOUR_CRON_SECRET' https://YOUR_DOMAIN/api/cron
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_USER=u508096037_admin
+DB_PASSWORD=YOUR_DATABASE_PASSWORD
+DB_NAME=u508096037_factuurscan
 ```
 
-Keep the secret in the private scheduler configuration. No unauthenticated cron URL exists. Cron analyzes up to three waiting invoice cases, queues proposals with the existing extraction/profile logic, runs the email outbox and voice dispatch, and queues a follow-up after 48 hours for accepted proposals without a recorded reply/signature. Follow-up processing stops for recorded pauses/withdrawals/suppression; the 48-hour follow-up is queued once and only within 14 days. Calls additionally require recorded consent, provider configuration and Brussels business hours. Ambiguous provider delivery results remain for review to avoid sending duplicates.
+Confirm DB_HOST with Hostinger for the Node runtime; the support-provided 127.0.0.1 is only correct if the app runtime can reach the database there. Enter the password privately in hPanel. The app initializes the required tables automatically and needs CREATE/SELECT/INSERT/UPDATE/DELETE permissions in that database. MySQL must support JSON_EXTRACT/JSON_SET and named locks (modern MySQL/MariaDB).
 
-## Providers and documents
+Keep the ADMIN_EMAIL, ADMIN_PASSWORD, AUTH_SECRET, RATE_LIMIT_SECRET, CRON_SECRET, OpenAI, Postmark and ElevenLabs credentials you already entered. `.env.example` lists supported names. Do not upload a real `.env` or commit credentials. Optional variables can be removed from hPanel if you do not have values for them; blank rows in its form need not be kept. Never use fake phone numbers.
 
-Set OPENAI_API_KEY for invoice extraction. Configure verified Postmark sender and EMAIL_ENABLED=true for sending; MAIL_BCC adds an internal copy. Configure Postmark inbound URL `/api/postmark/inbound` and delivery URL `/api/postmark/webhook` with the corresponding secrets; inbound replies must include exactly one case reference in the subject and match that case’s contact email; PDF/JPEG/PNG attachments enter the shared extraction flow. Set the voice provider variables for Vapi or the supplied ElevenLabs adapter. Provider calls were not sent during local checks.
+For the initial test, keep `EMAIL_ENABLED=false`, `VOICE_ENABLED=false`, `SIMPLE_SIGNING_ENABLED=false`. Set the OpenAI key and invoice model to enable extraction; AI_READY is a display readiness flag. Historical tariff comparison tests require NEXT_PUBLIC_ALLOW_HISTORICAL_TARIFFS=true at build time. The supplied table is October 2026 and is not a verified current offer.
 
-The original website calculation and tariff data remain in `lib/own-offers.ts` and `data/own-monthly-tariffs.json`. The supplied table is October 2026. Set NEXT_PUBLIC_ALLOW_HISTORICAL_TARIFFS=true **before building** for historical comparison testing; historical results carry the dated test label. Set false and supply a reviewed current table before real offers. The original comparison uses energy-only supplier benchmarks and keeps the monthly budget separate. It does not multiply an energy-only discount across taxes and the full invoice.
+## After deployment
 
-The existing document UI supports uploading supplier PDFs, personalization/mapping and separate customer review. Configure current supplier agreement PDFs, field maps and ENERGY_DOCUMENT_ROUTES_JSON using the included original documentation. PandaDoc remains supported. An optional simple declaration can be enabled with SIMPLE_SIGNING_ENABLED=true plus a comma-separated SIMPLE_SIGNING_ACCEPTED_SUPPLIERS list after the supplier accepts that method; it stores a signed PDF with declaration/evidence, document hash, signer, timestamp and request details. It does not independently verify the signer's identity. Service agreements already use the simple declaration flow.
+Visit `/api/health` and confirm database/storage report true. Sign in at `/admin`. Test one invoice before activating external delivery. Do not assume credentials alone verify the entire flow.
 
-The Node port preserves the provided website UI, customer flow, embedded comparison/proposal PDF creation, CRM panels and integration adapters. API credentials alone do not supply absent supplier contract templates, field mappings or provider account approval. Automatic supplier-template selection for every product and WhatsApp invoice ingestion require further implementation/configuration; there is no claim of a live end-to-end provider test.
+Create an authenticated scheduled POST every minute to `https://YOUR_DOMAIN/api/cron`, with header `Authorization: Bearer YOUR_CRON_SECRET`. The endpoint processes queued invoices/proposals and existing email/voice adapters, with a bounded 48-hour proposal reminder. Configure provider webhooks separately. ElevenLabs uses VOICE_PROVIDER=elevenlabs and the ELEVENLABS_* settings in .env.example; its phone ID is the ElevenLabs ID for the Twilio-connected number.
 
-## Verification performed
+MySQL stores original and generated files privately in `node_objects` and `node_object_chunks`. They are accessed through existing authenticated case endpoints, not public file URLs. Back up the entire database. For larger production file volumes, a separate private object store should be implemented instead of retaining all bytes in MySQL.
 
-Production Next build and TypeScript checks; isolated tests for database migrations/atomic rollback, private object bytes/path traversal and admin session tamper rejection. Local HTTP smoke checks are recorded in DELIVERY-NOTES.md. No live customer emails/calls/signatures were triggered.
+## Scope and verification
+
+This fixes the Hostinger filesystem build error and ports persistence to MySQL. Website UI, comparison model and existing case/document/email/provider workflows are retained. Automatic agreement template selection for every supplier product and full WhatsApp invoice ingestion remain unfinished. Supplier PDFs, mappings and acceptance routes still need configuring. This delivery is not a claim that the whole business flow is complete.
+
+Production build and SQL/session compatibility checks are run for this revision. No live Hostinger MySQL connection or provider sending was tested here: private runtime database credentials are entered only in Hostinger. Live connection and JSON/version compatibility must be checked through /api/health and a case smoke test after deployment.

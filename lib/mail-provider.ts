@@ -1,6 +1,6 @@
 export type MailConfig={POSTMARK_SERVER_TOKEN?:string;MAIL_FROM?:string;MAIL_REPLY_TO?:string;MAIL_NOTIFICATION_TO?:string;MAIL_BCC?:string;EMAIL_ENABLED?:string};
 const address=(v:string|undefined)=>!!v&&/^[^\s<>@,;]+@[^\s<>@,;]+\.[^\s<>@,;]+$/.test(v)&&v.length<=254;
-export function mailConfigured(e:MailConfig){return e.EMAIL_ENABLED==="true"&&!!e.POSTMARK_SERVER_TOKEN&&e.POSTMARK_SERVER_TOKEN!=="POSTMARK_API_TEST"&&address(e.MAIL_FROM)&&address(e.MAIL_NOTIFICATION_TO)&&(!e.MAIL_REPLY_TO||address(e.MAIL_REPLY_TO));}
+export function mailConfigured(e:MailConfig){return e.EMAIL_ENABLED==="true"&&!!e.POSTMARK_SERVER_TOKEN&&e.POSTMARK_SERVER_TOKEN!=="POSTMARK_API_TEST"&&address(e.MAIL_FROM?.match(/<([^<>]+)>$/)?.[1]||e.MAIL_FROM)&&address(e.MAIL_NOTIFICATION_TO)&&(!e.MAIL_REPLY_TO||address(e.MAIL_REPLY_TO));}
 export type MailAttachment={Name:string;Content:string;ContentType:"application/pdf"};
 export async function sendTransactional(e:MailConfig,to:string,subject:string,text:string,messageId:string,attachments:MailAttachment[]=[],html?:string){
  if(!mailConfigured(e)||!address(to))return {status:"blocked",error:"mail_not_configured"} as const;
