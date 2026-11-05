@@ -1,3 +1,4 @@
+import {publicOrigin} from "@/lib/request-origin";
 import {situationSchema} from "@/lib/energy-situation";
 import {z} from "zod";
 import ownCatalog from "@/data/own-monthly-tariffs.json";
@@ -28,7 +29,7 @@ export async function POST(req:Request){
   const payload={name:p.name,company:"Nog te bevestigen",email:p.email,phone:p.phone,sector:"overig",attribution:requestAttribution(req),energyInput:primary,energyInputs:inputs,
    energy:{notes:inputs.filter(p=>p.volumeBand||p.advanceBand).map(p=>`${p.energy}: bandscenario, ${p.annualKwh} kWh/jaar en ${p.monthlyAdvance} EUR/maand. Eerst bevestigen met factuur; geen gemeten waarden.`).join("\n"),sites:[{...situationSchema.parse(inputs.find(p=>p.energy==="electricity")?.situation||primary.situation||{}),electricitySource:inputs.find(p=>p.energy==="electricity")?.areaScenario?"area_scenario":inputs.find(p=>p.energy==="electricity")?.volumeBand?"band_scenario":"customer",gasSource:inputs.find(p=>p.energy==="gas")?.areaScenario?"area_scenario":inputs.find(p=>p.energy==="gas")?.volumeBand?"band_scenario":"customer",consumptionSource:inputs.some(p=>p.areaScenario)?"area_scenario":"customer",currentSupplier:primary.supplier,currentType:primary.contractType,electricityTotal:inputs.find(p=>p.energy==="electricity")?.annualKwh??null,gasKwh:inputs.find(p=>p.energy==="gas")?.annualKwh??null}]},
    comparisonSnapshot:comparison,comparisonsSnapshot:comparisons,offerProposal:offers.find(o=>o.energy===primary.energy)||null,offerProposals:offers,
-   continueCipher:await protectLink(`${new URL(req.url).origin}/aanleveren#${p.id}:${key}`),funnel:{stage:"comparison_saved",lastActivityAt:now,callbackRequested:p.callback}};
+   continueCipher:await protectLink(`${publicOrigin(req)}/aanleveren#${p.id}:${key}`),funnel:{stage:"comparison_saved",lastActivityAt:now,callbackRequested:p.callback}};
   await recordRequest(p.id,"sales_lead",payload,[],{acknowledged:true,analysisRequested:true,emailProposal:p.emailProposal,followupEmail:p.followupEmail,callbackRequested:p.callback,aiCall:p.aiCall,marketing:false,whatsapp:false,funnelRecovery:true,followupUntil:new Date(Date.now()+7*86400000).toISOString(),consentEvidence:{version:"FS-OFFER-2026-10-21",at:now,sourceUrl:new URL("/energie-vergelijken",req.url).href,text:"Energievergelijking en voorstel per e-mail aangevraagd via de verzendknop. Eventuele herinnering en beltoestemmingen zijn hieronder afzonderlijk vastgelegd.",emailProposal:p.emailProposal,followupEmail:p.followupEmail,callback:p.callback,aiCall:p.aiCall}},key,false);
   if(p.callback)await action("human_callback",p.id,1,now);
   await logEvent("offer_lead_saved",p.id,{priced:offers.length>0,emailProposal:p.emailProposal,followupEmail:p.followupEmail,callback:p.callback,aiCall:p.aiCall});

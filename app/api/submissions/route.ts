@@ -1,3 +1,4 @@
+import {publicOrigin,trustedSameOrigin} from "@/lib/request-origin";
 import {energyCaseSchema} from "@/lib/energy-case";
 import {requestAttribution} from "@/lib/attribution";
 import {serviceSchema,serviceTerms,serviceVersion,serviceReceiptLines} from "@/lib/service-authorization";
@@ -10,8 +11,7 @@ const schema=z.object({freeScan:z.boolean().default(true),sector:z.enum(["horeca
 const reply=(data:unknown,status=200)=>Response.json(data,{status,headers:{"Cache-Control":"no-store"}});
 const maxBody=21*1024*1024;
 export async function POST(request:Request){
- const origin=request.headers.get("origin");
- if(origin&&origin!==new URL(request.url).origin)return reply({error:"Deze aanvraag komt niet van de website."},403);
+ if(!trustedSameOrigin(request))return reply({error:"Deze aanvraag komt niet van de website."},403);
  const id=request.headers.get("X-Submission-ID")||"";
  if(!/^[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}$/i.test(id))return reply({error:"Ongeldige aanvraagreferentie. Vernieuw de pagina."},400);
  const bucket=(env as unknown as {BUCKET?:R2Bucket}).BUCKET;
@@ -67,7 +67,7 @@ export async function POST(request:Request){
   if(service){const acceptedAt=new Date().toISOString(),scopeHash=serviceHash!;const {createServicePdf}=await import("@/lib/mandate-pdf");const pdf=await createServicePdf(serviceReceiptLines(service,parsed.data,acceptedAt),`FS-${id.slice(0,8).toUpperCase()}`,acceptedAt,scopeHash);const pdfKey=`submissions/${id}/files/opdracht`;uploaded.push(pdfKey);await bucket.put(pdfKey,pdf,{httpMetadata:{contentType:"application/pdf"}});metadata.push({key:pdfKey,name:"opdracht-energiebegeleiding.pdf",size:pdf.length,contentType:"application/pdf",purpose:"service_authorization"});serviceEvidence={...service,terms:serviceTerms,acceptedAt,scopeHash,documentHash:Array.from(new Uint8Array(await crypto.subtle.digest("SHA-256",new Uint8Array(pdf).buffer))).map(b=>b.toString(16).padStart(2,"0")).join(""),validUntil:new Date(Date.now()+90*86400000).toISOString(),revokedAt:null,ip:request.headers.get("cf-connecting-ip")||null,userAgent:(request.headers.get("user-agent")||"").slice(0,500),identityVerified:false,providerAccepted:false};}
   const receipt=await recordRequest(id,"analysis",{...parsed.data,attribution:requestAttribution(request),...(intakeEnergy?{energy:intakeEnergy,energyVersion:1}:{})},metadata,{privacyVersion:"2026-10-16",acknowledged:!inbound,channel:inbound?"email":"website",emailAnalysisRequested:inbound,aiCall:parsed.data.followup,whatsapp:parsed.data.whatsapp,marketing:parsed.data.marketing,analysisRequested:true,emailProposal:!inbound,scanRequested:true,scanPrice:0,currency:"EUR",...(serviceEvidence?{service:serviceEvidence}:{})},receiptToken);
   try{
-   const {runtime}=await import("@/lib/server");if(runtime().RATE_LIMIT_SECRET&&!inbound){const {protectLink}=await import("@/lib/sales-automation");const cipher=await protectLink(`${new URL(request.url).origin}/overstap-afronden#${id}:${receiptToken}`);await db().prepare("UPDATE requests SET payload=json_set(payload,'$.continueCipher',?) WHERE id=?").bind(cipher,id).run();}
+   const {runtime}=await import("@/lib/server");if(runtime().RATE_LIMIT_SECRET&&!inbound){const {protectLink}=await import("@/lib/sales-automation");const cipher=await protectLink(`${publicOrigin(request)}/overstap-afronden#${id}:${receiptToken}`);await db().prepare("UPDATE requests SET payload=json_set(payload,'$.continueCipher',?) WHERE id=?").bind(cipher,id).run();}
    const row=await db().prepare("SELECT * FROM requests WHERE id=?").bind(id).first<import("@/lib/server").StoredRequest>();if(row){const {analyzeStoredInvoices}=await import("@/lib/checkout-storage");await analyzeStoredInvoices(row);if(!inbound){const {queueCheckoutProposal}=await import("@/lib/checkout-proposal");await queueCheckoutProposal(id);}}
   }catch{console.error("Invoice suggestions need review; original files remain stored");}
   if(serviceEvidence){try{const {queueQuotes}=await import("@/lib/quote-routing");await queueQuotes(id);const {dispatchMail}=await import("@/lib/mail");await dispatchMail(id);}catch{console.error("Quotation dispatch deferred");}}

@@ -42,7 +42,7 @@ export async function extractInvoiceBytes(bytes:Uint8Array,name:string,mime:stri
   try{const {getDocumentProxy,extractText}=await import("unpdf");const pdf=await getDocumentProxy(new Uint8Array(bytes),{disableFontFace:true,useSystemFonts:true});try{if(pdf.numPages>30){overLimit=true;throw Error("Te veel pagina's");}const out=await extractText(pdf,{mergePages:false});text=out.text.join("\n").slice(0,150000)}finally{await pdf.loadingTask.destroy()}}catch{}
  }
  if(overLimit)return {status:"review_required" as const,method:"page_limit",data:sanitize(extractInvoiceText("")),message:"Meer dan 30 pagina’s; voeg een kortere jaarafrekening toe of vul de gegevens handmatig in."};
- if(text.replace(/\s/g,"").length>150){const result=sanitize(extractInvoiceText(text));if(result.company||result.locations.length)return {status:"extracted" as const,method:"pdf_text",data:result};}
+ if(!e.OPENAI_API_KEY&&text.replace(/\s/g,"").length>150){const result=sanitize(extractInvoiceText(text));if(result.company||result.locations.length)return {status:"extracted" as const,method:"pdf_text",data:result};}
  if(!e.OPENAI_API_KEY||!e.INVOICE_OCR_MODEL)return {status:"review_required" as const,method:text?"pdf_text_incomplete":"ocr_not_configured",data:sanitize(extractInvoiceText(text)),message:"Bestand ontvangen. Automatische beeldherkenning is niet geconfigureerd; vul de ontbrekende gegevens handmatig aan."};
  let binary="";for(let i=0;i<bytes.length;i+=32768)binary+=String.fromCharCode(...bytes.subarray(i,i+32768));
  const content=mime==="application/pdf"?{type:"input_file",filename:name,file_data:`data:${mime};base64,${btoa(binary)}`}:{type:"input_image",image_url:`data:${mime};base64,${btoa(binary)}`,detail:"high"};
