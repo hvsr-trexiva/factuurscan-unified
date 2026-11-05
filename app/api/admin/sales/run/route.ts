@@ -1,2 +1,2 @@
-import {json,ownerAuthorized,sameOrigin} from "@/lib/server";import {runSales} from "@/lib/sales-automation";
-export async function POST(req:Request){if(!sameOrigin(req)||!await ownerAuthorized())return json({},403);try{return json(await runSales())}catch{return json({error:"Verwerking niet beschikbaar"},503)}}
+import {json,ownerAuthorized,sameOrigin,logEvent} from "@/lib/server";import {runSales} from "@/lib/sales-automation";
+export async function POST(req:Request){if(!sameOrigin(req)||!await ownerAuthorized())return json({},403);try{return json(await runSales())}catch(error){const reason=error instanceof Error?error.message:"unknown";console.error("FS_SALES_RUN_FAILED",reason);try{await logEvent("automation_sales_runner_failed",null,{reason:reason.slice(0,240)})}catch{}return json({error:"Verwerking niet beschikbaar"},503)}}
